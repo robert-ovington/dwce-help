@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Checks | DWCE Help Centre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="logo">
+      <span class="logo-text">DWCE</span>
+      <span class="logo-sub">Help Centre</span>
+    </a>
+  </div>
+</header>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<nav class="sidebar" id="sidebar">
+  <div class="nav-label">Phase 1 — Workers</div>
+  <a href="getting-started.html" class="nav-link">Getting Started</a>
+  <a href="login.html"           class="nav-link">Login &amp; Password</a>
+  <a href="clocking.html"        class="nav-link">Clocking In &amp; Out</a>
+  <a href="messages.html"        class="nav-link">Messages</a>
+  <a href="timesheets.html"      class="nav-link">Timesheets</a>
+  <a href="plant-checks.html"    class="nav-link">Plant Checks</a>
+  <a href="deliveries.html"      class="nav-link">Deliveries</a>
+</nav>
+
+<main class="content">
+  <div class="content-inner">
+
+    <div class="breadcrumb"><a href="index.html">Home</a><span>Plant Checks</span></div>
+    <h1>Plant Checks</h1>
+    <p class="page-intro">Plant checks ensure equipment is safe and fit for use before and during operation. This section covers pre-start checks for large plant, asset checks for small plant, and how to report faults.</p>
+
+    <div class="toc">
+      <div class="toc-title">On this page</div>
+      <ul>
+        <li><a href="#large-plant">Large Plant</a>
+          <ul>
+            <li><a href="#large-plant-config">a. Configuring for First Time Use</a></li>
+            <li><a href="#large-plant-fault">b. Recording a Fault &amp; Adding a Photo</a></li>
+            <li><a href="#large-plant-prestart">c. Submitting a Pre-Start Check</a></li>
+          </ul>
+        </li>
+        <li><a href="#small-plant">Small Plant</a>
+          <ul>
+            <li><a href="#asset-check">a. Asset Check for a Location</a></li>
+            <li><a href="#small-plant-fault">b. Recording a Fault &amp; Adding a Photo</a></li>
+          </ul>
+        </li>
+        <li><a href="#my-checks">My Checks</a></li>
+      </ul>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════════
+         LARGE PLANT
+    ═════════════════════════════════════════════════════════════════ -->
+    <h2 id="large-plant">Large Plant</h2>
+
+    <p>
+      Large plant refers to heavy machinery and vehicles — excavators, dumpers, rollers, lorries,
+      and similar equipment. Before operating any large plant, a <strong>pre-start check</strong>
+      must be completed. The first time you use a particular machine in the app, you will need to
+      configure it.
+    </p>
+
+    <hr class="section-divider">
+
+    <!-- ── a. FIRST TIME CONFIG ───────────────────────────────────── -->
+    <h3 id="large-plant-config">a. Configuring for First Time Use</h3>
+
+    <p>
+      Before you can complete a pre-start check for a machine, it must be set up in the app.
+      This only needs to be done once per machine.
+    </p>
+
+    <ol class="steps">
+      <li>From the main menu, tap <strong>Plant Checks</strong> then <strong>Large Plant</strong>.</li>
+      <li>If the machine you want to check is not listed, tap <span class="btn-label">Configure</span> or the settings icon.</li>
+      <li>Select the machine from the available list, or search for it by name or registration.</li>
+      <li>Confirm the machine details shown on screen are correct (machine type, registration/ID, site location).</li>
+      <li>Tap <span class="btn-label">Save Configuration</span>.</li>
+      <li>The machine will now appear in your pre-start check list.</li>
+    </ol>
+
+    <div class="info">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>If the machine you need is not available in the list, contact the office — new plant items are added by an administrator.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── b. RECORDING A FAULT ───────────────────────────────────── -->
+    <h3 id="large-plant-fault">b. Recording a Fault &amp; Adding a Photo</h3>
+
+    <p>
+      If you find a defect or fault on a piece of large plant — before, during, or after a
+      pre-start check — you must report it immediately using the fault report screen.
+    </p>
+
+    <ol class="steps">
+      <li>From the Large Plant screen, select the machine with the fault.</li>
+      <li>Tap <span class="btn-label">Report Fault</span>.</li>
+      <li>Select the <strong>fault category</strong> from the list (e.g. engine, tyres, hydraulics, lights).</li>
+      <li>Enter a <strong>description</strong> of the fault in the text field — be as specific as possible.</li>
+      <li>To add a photo, tap <span class="btn-label">Add Photo</span>:
+        <ul>
+          <li>Choose <strong>Take Photo</strong> to use your camera directly</li>
+          <li>Or choose <strong>Choose from Gallery</strong> if you already have a photo saved</li>
+        </ul>
+      </li>
+      <li>Review the fault details and photo, then tap <span class="btn-label">Submit Fault</span>.</li>
+    </ol>
+
+    <div class="warning">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>
+          Do not operate a machine with a reported safety-critical fault until it has been
+          cleared by the site supervisor or maintenance team. Submitting a fault report in
+          the app does not mean the machine has been cleared for use.
+        </p>
+      </div>
+    </div>
+
+    <div class="tip">
+      <span class="callout-icon">✅</span>
+      <div class="callout-body">
+        <p>Photos are extremely helpful for the maintenance team. Try to photograph the fault clearly, close-up, in good light. Include a wider shot showing where on the machine the fault is.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── c. PRE-START CHECK ─────────────────────────────────────── -->
+    <h3 id="large-plant-prestart">c. Submitting a Pre-Start Check</h3>
+
+    <p>
+      A pre-start check must be completed before you operate a piece of large plant each day.
+      It confirms the machine is safe and fit for use.
+    </p>
+
+    <ol class="steps">
+      <li>From the main menu, tap <strong>Plant Checks → Large Plant</strong>.</li>
+      <li>Select the machine you are about to operate from the list.</li>
+      <li>Tap <span class="btn-label">New Pre-Start Check</span>.</li>
+      <li>Work through the checklist items displayed on screen. For each item, tap:
+        <ul>
+          <li><span class="btn-label" style="background:#059669;">Pass</span> — if the item is in good condition and working correctly</li>
+          <li><span class="btn-label" style="background:#dc2626;">Fail</span> — if the item has a defect or is not working</li>
+        </ul>
+      </li>
+      <li>For any item you mark as <strong>Fail</strong>, you will be prompted to add a description and optionally a photo. Complete this before continuing.</li>
+      <li>Once all checklist items are answered, tap <span class="btn-label">Review &amp; Submit</span>.</li>
+      <li>Review the summary of your check — passed, failed, and any notes.</li>
+      <li>Tap <span class="btn-label">Submit Check</span> to confirm.</li>
+    </ol>
+
+    <div class="warning">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>Do not rush through the checklist by tapping Pass on everything without physically checking each item. Pre-start checks are a legal safety requirement and must be completed honestly.</p>
+      </div>
+    </div>
+
+    <div class="info">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Your supervisor is notified automatically when a check is submitted with one or more failed items.</p>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════════
+         SMALL PLANT
+    ═════════════════════════════════════════════════════════════════ -->
+    <hr class="section-divider">
+    <h2 id="small-plant">Small Plant</h2>
+
+    <p>
+      Small plant refers to hand tools, power tools, and smaller equipment — generators, compactors,
+      vibrators, breakers, and similar items. Asset checks are carried out by location and confirm
+      that equipment at that location is present and in acceptable condition.
+    </p>
+
+    <hr class="section-divider">
+
+    <!-- ── a. ASSET CHECK ─────────────────────────────────────────── -->
+    <h3 id="asset-check">a. Asset Check for a Location</h3>
+
+    <p>
+      An asset check is a location-based inspection. You select the site or storage area, and
+      the app displays all items that should be present at that location.
+    </p>
+
+    <ol class="steps">
+      <li>From the main menu, tap <strong>Plant Checks → Small Plant</strong>.</li>
+      <li>Tap <span class="btn-label">New Asset Check</span>.</li>
+      <li>Select the <strong>location</strong> you are checking from the dropdown list (e.g. a specific site, compound, or storage area).</li>
+      <li>The app will display the list of items assigned to that location.</li>
+      <li>For each item, indicate its status:
+        <ul>
+          <li><strong>Present &amp; OK</strong> — item is on site and in good condition</li>
+          <li><strong>Present — Fault</strong> — item is on site but has a defect (you will be prompted to record the fault — see below)</li>
+          <li><strong>Not Present</strong> — item is missing from the location</li>
+        </ul>
+      </li>
+      <li>Once all items are reviewed, tap <span class="btn-label">Submit Check</span>.</li>
+    </ol>
+
+    <div class="tip">
+      <span class="callout-icon">✅</span>
+      <div class="callout-body">
+        <p>Walk the location with your phone and physically check each item as you go rather than filling the form in from memory.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── b. SMALL PLANT FAULT ───────────────────────────────────── -->
+    <h3 id="small-plant-fault">b. Recording a Fault &amp; Adding a Photo</h3>
+
+    <p>
+      When you identify a fault on a small plant item during an asset check — or at any time —
+      you can submit a fault report directly.
+    </p>
+
+    <ol class="steps">
+      <li>From the Small Plant screen, tap <span class="btn-label">Report Fault</span>, or when completing an asset check, select <strong>Present — Fault</strong> on the relevant item.</li>
+      <li>Select the <strong>equipment item</strong> with the fault (if not already selected).</li>
+      <li>Select the <strong>fault type</strong> from the list.</li>
+      <li>Enter a clear <strong>description</strong> of the fault.</li>
+      <li>Tap <span class="btn-label">Add Photo</span> to take a photo or choose one from your gallery. A photo is strongly recommended.</li>
+      <li>Tap <span class="btn-label">Submit</span> to send the fault report.</li>
+    </ol>
+
+    <div class="warning">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>Tag or set aside any equipment with a reported fault so colleagues know it should not be used until repaired or replaced.</p>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════════
+         MY CHECKS
+    ═════════════════════════════════════════════════════════════════ -->
+    <hr class="section-divider">
+    <h2 id="my-checks">My Checks</h2>
+
+    <p>
+      <strong>My Checks</strong> shows a history of all pre-start and asset checks you have
+      submitted. Use it to confirm a check was recorded correctly or to review past results.
+    </p>
+
+    <ol class="steps">
+      <li>From the main menu, tap <strong>Plant Checks → My Checks</strong>.</li>
+      <li>A list of your submitted checks appears, ordered by date — most recent first.</li>
+      <li>Tap any entry to view the full details of that check, including each checklist item result and any fault notes.</li>
+    </ol>
+
+    <h3>What the summary shows</h3>
+    <ul>
+      <li><strong>Date and time</strong> the check was submitted</li>
+      <li><strong>Machine or location</strong> checked</li>
+      <li><strong>Overall result</strong> — all passed, or number of items failed</li>
+      <li>Individual item results and any fault descriptions or photos</li>
+    </ul>
+
+    <div class="info">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>My Checks is a read-only record. Submitted checks cannot be edited. If you submitted a check with an error, notify your supervisor.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  &copy; 2025 DWCE. All rights reserved.
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>

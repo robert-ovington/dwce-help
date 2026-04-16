@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deliveries | DWCE Help Centre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="logo">
+      <span class="logo-text">DWCE</span>
+      <span class="logo-sub">Help Centre</span>
+    </a>
+  </div>
+</header>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<nav class="sidebar" id="sidebar">
+  <div class="nav-label">Phase 1 — Workers</div>
+  <a href="getting-started.html" class="nav-link">Getting Started</a>
+  <a href="login.html"           class="nav-link">Login &amp; Password</a>
+  <a href="clocking.html"        class="nav-link">Clocking In &amp; Out</a>
+  <a href="messages.html"        class="nav-link">Messages</a>
+  <a href="timesheets.html"      class="nav-link">Timesheets</a>
+  <a href="plant-checks.html"    class="nav-link">Plant Checks</a>
+  <a href="deliveries.html"      class="nav-link">Deliveries</a>
+</nav>
+
+<main class="content">
+  <div class="content-inner">
+
+    <div class="breadcrumb"><a href="index.html">Home</a><span>Deliveries</span></div>
+    <h1>Deliveries</h1>
+    <p class="page-intro">Record aggregate and waste deliveries directly in the app. All delivery records are stored digitally and can be reviewed, edited, and exported as a PDF.</p>
+
+    <div class="toc">
+      <div class="toc-title">On this page</div>
+      <ul>
+        <li><a href="#aggregate">Submitting an Aggregate Delivery</a></li>
+        <li><a href="#waste">Submitting a Waste Delivery</a></li>
+        <li><a href="#my-deliveries">My Deliveries — Viewing, Editing, Deleting &amp; PDF</a></li>
+      </ul>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════════
+         AGGREGATE DELIVERY
+    ═════════════════════════════════════════════════════════════════ -->
+    <h2 id="aggregate">Submitting an Aggregate Delivery</h2>
+
+    <p>
+      Use this screen to record when aggregate materials are delivered to a job. You can record
+      <strong>multiple deliveries for the same job on the same day</strong> — for example, if a
+      lorry makes several runs.
+    </p>
+
+    <ol class="steps">
+      <li>From the main menu, tap <strong>Deliveries → Aggregate Delivery</strong>.</li>
+      <li>Select the <strong>Job / Project</strong> the delivery is for from the dropdown list.</li>
+      <li>The <strong>date</strong> will default to today. Change it if recording a delivery from a different date.</li>
+      <li>Select the <strong>material type</strong> (e.g. Type 1 sub-base, sharp sand, gravel).</li>
+      <li>Enter the <strong>quantity</strong> and <strong>unit</strong> (e.g. tonnes, m³).</li>
+      <li>Enter the <strong>supplier</strong> name or select from the list.</li>
+      <li>Enter the <strong>delivery ticket / docket number</strong> if available.</li>
+      <li>Add any relevant <strong>notes</strong> in the comments field.</li>
+      <li>Tap <span class="btn-label">Save Delivery</span>.</li>
+    </ol>
+
+    <h3>Adding multiple deliveries for the same job</h3>
+    <p>
+      After saving the first delivery, you can immediately add another for the same job and date:
+    </p>
+    <ol class="steps">
+      <li>After saving, tap <span class="btn-label">+ Add Another Delivery</span>.</li>
+      <li>The job and date will pre-fill from your previous entry.</li>
+      <li>Enter the details for the next delivery and tap <span class="btn-label">Save Delivery</span>.</li>
+      <li>Repeat for as many deliveries as required.</li>
+    </ol>
+
+    <div class="tip">
+      <span class="callout-icon">✅</span>
+      <div class="callout-body">
+        <p>Record each delivery as it arrives on site, rather than at the end of the day. This ensures accurate quantities and delivery times.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ════════════════════════════════════════════════════════════
+         WASTE DELIVERY
+    ═════════════════════════════════════════════════════════════════ -->
+    <h2 id="waste">Submitting a Waste Delivery</h2>
+
+    <p>
+      A waste delivery record is created each time a waste load leaves the site. Each record
+      covers a <strong>single waste type</strong>. The app uses your saved signature and also
+      allows for capturing the signature of the waste facility receiving the load.
+    </p>
+
+    <ol class="steps">
+      <li>From the main menu, tap <strong>Deliveries → Waste Delivery</strong>.</li>
+      <li>Select the <strong>Job / Project</strong> the waste is coming from.</li>
+      <li>The <strong>date</strong> will default to today.</li>
+      <li>Select the <strong>waste type</strong> from the list (one type per record — e.g. inert soil, mixed construction waste, concrete).</li>
+      <li>Enter the <strong>quantity</strong> and <strong>unit</strong>.</li>
+      <li>Enter the <strong>waste carrier name</strong> and <strong>licence number</strong> if required.</li>
+      <li>Enter the name of the <strong>waste facility</strong> where the load is being taken.</li>
+      <li>Enter the <strong>consignment / transfer note number</strong> if applicable.</li>
+    </ol>
+
+    <h3>Driver signature</h3>
+    <p>
+      The app uses your <strong>saved signature</strong> for waste delivery records. Your
+      signature is set up once when your account is configured — it will be applied automatically.
+    </p>
+    <ul>
+      <li>If your saved signature is displayed and correct, it will be included automatically</li>
+      <li>If your signature needs updating, contact the office to have it reset</li>
+    </ul>
+
+    <h3>Waste facility signature</h3>
+    <p>
+      If the waste facility requires a signature from their staff to confirm receipt, you can
+      capture it in the app:
+    </p>
+    <ol class="steps">
+      <li>At the waste facility, tap <span class="btn-label">Add Facility Signature</span>.</li>
+      <li>Hand your phone to the facility operative.</li>
+      <li>They sign directly on the screen using their finger.</li>
+      <li>Tap <span class="btn-label">Accept Signature</span> to save it.</li>
+    </ol>
+
+    <ol class="steps" style="counter-reset: step 9;">
+      <li>Review all details and tap <span class="btn-label">Save Delivery</span>.</li>
+    </ol>
+
+    <div class="warning">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>Each waste delivery record must have a single waste type. If you are carrying mixed waste types in separate loads, create a separate record for each.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ════════════════════════════════════════════════════════════
+         MY DELIVERIES
+    ═════════════════════════════════════════════════════════════════ -->
+    <h2 id="my-deliveries">My Deliveries — Viewing, Editing, Deleting &amp; PDF</h2>
+
+    <p>
+      <strong>My Deliveries</strong> is a complete history of all delivery records you have
+      submitted. You can filter the list, edit or delete records, and export any delivery as a PDF.
+    </p>
+
+    <ol class="steps">
+      <li>From the main menu, tap <strong>Deliveries → My Deliveries</strong>.</li>
+      <li>Your delivery history is displayed, most recent at the top.</li>
+    </ol>
+
+    <h3>Filtering and searching</h3>
+    <p>Use the filter options at the top of the screen to narrow down the list:</p>
+    <ul>
+      <li><strong>Date range</strong> — select a start and end date to view deliveries within a period</li>
+      <li><strong>Delivery type</strong> — filter by Aggregate or Waste</li>
+      <li><strong>Job / Project</strong> — view deliveries for a specific job</li>
+    </ul>
+
+    <h3>Viewing a delivery record</h3>
+    <p>Tap any entry in the list to open the full details of that delivery record.</p>
+
+    <h3>Editing a delivery</h3>
+    <ol class="steps">
+      <li>Open the delivery record you want to change.</li>
+      <li>Tap the <span class="btn-label">Edit</span> button.</li>
+      <li>Update the relevant fields.</li>
+      <li>Tap <span class="btn-label">Save</span> to confirm.</li>
+    </ol>
+
+    <div class="info">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Delivery records can only be edited within a set time window. If the Edit button is not available, contact the office for an amendment.</p>
+      </div>
+    </div>
+
+    <h3>Deleting a delivery</h3>
+    <ol class="steps">
+      <li>Open the delivery record you want to delete.</li>
+      <li>Tap the <span class="btn-label">Delete</span> button (bin icon).</li>
+      <li>Confirm the deletion in the prompt that appears.</li>
+    </ol>
+
+    <div class="warning">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>Deletion is permanent. Only delete a record if it was entered in error.</p>
+      </div>
+    </div>
+
+    <h3>Exporting to PDF</h3>
+    <p>Any delivery record can be exported as a PDF — useful for providing a paper copy to a client or waste facility.</p>
+    <ol class="steps">
+      <li>Open the delivery record.</li>
+      <li>Tap <span class="btn-label">Export PDF</span> or the share icon.</li>
+      <li>The PDF will be generated and you can save it, print it, or share it via email or messaging apps.</li>
+    </ol>
+
+    <div class="tip">
+      <span class="callout-icon">✅</span>
+      <div class="callout-body">
+        <p>PDF exports include all delivery details, both signatures (where captured), and a timestamp. They are suitable for use as waste transfer notes or delivery dockets.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  &copy; 2025 DWCE. All rights reserved.
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>

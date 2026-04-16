@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timesheets | DWCE Help Centre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="logo">
+      <span class="logo-text">DWCE</span>
+      <span class="logo-sub">Help Centre</span>
+    </a>
+  </div>
+</header>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<nav class="sidebar" id="sidebar">
+  <div class="nav-label">Phase 1 — Workers</div>
+  <a href="getting-started.html" class="nav-link">Getting Started</a>
+  <a href="login.html"           class="nav-link">Login &amp; Password</a>
+  <a href="clocking.html"        class="nav-link">Clocking In &amp; Out</a>
+  <a href="messages.html"        class="nav-link">Messages</a>
+  <a href="timesheets.html"      class="nav-link">Timesheets</a>
+  <a href="plant-checks.html"    class="nav-link">Plant Checks</a>
+  <a href="deliveries.html"      class="nav-link">Deliveries</a>
+</nav>
+
+<main class="content">
+  <div class="content-inner">
+
+    <div class="breadcrumb"><a href="index.html">Home</a><span>Timesheets</span></div>
+    <h1>Timesheets</h1>
+    <p class="page-intro">Your timesheet is made up of individual <strong>Time Periods</strong> — one for each block of work in a day. This section covers how to add, view, edit and understand your timesheet.</p>
+
+    <div class="toc">
+      <div class="toc-title">On this page</div>
+      <ul>
+        <li><a href="#adding-time-periods">Adding a Time Period</a>
+          <ul>
+            <li><a href="#date-time-breaks">a. Date, Time &amp; Breaks</a></li>
+            <li><a href="#project-fleet">b. Project / Fleet</a></li>
+            <li><a href="#fleet-equipment">c. Fleet &amp; Equipment</a></li>
+            <li><a href="#allowances">d. Allowances</a></li>
+            <li><a href="#materials">e. Materials (Concrete Lorry Driver)</a></li>
+            <li><a href="#comments">f. Comments</a></li>
+            <li><a href="#submission-popup">g. Reviewing Before Saving</a></li>
+          </ul>
+        </li>
+        <li><a href="#my-timesheet">My Timesheet — Viewing, Editing &amp; Deleting</a></li>
+        <li><a href="#my-hours">My Hours</a></li>
+      </ul>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════════
+         ADDING TIME PERIODS
+    ═════════════════════════════════════════════════════════════════ -->
+    <h2 id="adding-time-periods">Adding a Time Period</h2>
+
+    <p>
+      A <strong>Time Period</strong> is a single record of work — it captures the date, the hours
+      you worked, what project or vehicle you were on, and any additional information such as
+      equipment used, allowances, and materials. You should add a time period for each distinct
+      block of work in your day.
+    </p>
+
+    <ol class="steps">
+      <li>From the main menu, tap <strong>Timesheets</strong>.</li>
+      <li>Tap the <span class="btn-label">+ Add Time Period</span> button.</li>
+      <li>Work through each section of the form (described below).</li>
+      <li>When all required fields are complete, tap <span class="btn-label">Save</span> to review the submission popup and confirm.</li>
+    </ol>
+
+    <hr class="section-divider">
+
+    <!-- ── a. DATE, TIME & BREAKS ─────────────────────────────────── -->
+    <h3 id="date-time-breaks">a. Date, Time &amp; Breaks</h3>
+
+    <p>This section sets the date and the hours worked for this time period.</p>
+
+    <h4>Date</h4>
+    <p>
+      Tap the <strong>Date</strong> field to open the date picker. By default it will be set to
+      today's date. Scroll to select a different date if you are entering a time period for a
+      previous day.
+    </p>
+    <div class="warning">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>Always check the date is correct before saving. Timesheets submitted for the wrong date will need to be corrected by your supervisor.</p>
+      </div>
+    </div>
+
+    <h4>Start Time &amp; End Time</h4>
+    <p>
+      Tap the <strong>Start Time</strong> field and use the time picker to set the time you
+      began working. Repeat for <strong>End Time</strong> when you finished.
+    </p>
+    <p>
+      The app automatically calculates your total hours based on the start and end times minus
+      any breaks you record.
+    </p>
+
+    <h4>Breaks</h4>
+    <p>
+      If you took an unpaid break during this time period, record it in the <strong>Break</strong>
+      field. Enter the total duration of unpaid breaks in minutes. This amount is deducted from
+      your total working hours.
+    </p>
+    <div class="tip">
+      <span class="callout-icon">✅</span>
+      <div class="callout-body">
+        <p>Only enter breaks that were unpaid. If you had a paid lunch break, do not include it here.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── b. PROJECT / FLEET ─────────────────────────────────────── -->
+    <h3 id="project-fleet">b. Project / Fleet</h3>
+
+    <p>
+      This section links your time period to either a <strong>Project</strong> (a specific job or
+      contract) or a <strong>Fleet</strong> item (a vehicle or piece of plant). You will switch
+      between the two depending on the nature of your work.
+    </p>
+
+    <h4>Switching between Project and Fleet</h4>
+    <p>
+      At the top of this section you will see two tabs or a toggle: <kbd>Project</kbd> and
+      <kbd>Fleet</kbd>. Tap the one that applies to your work:
+    </p>
+    <ul>
+      <li><strong>Project</strong> — use this if your time is allocated to a specific site or contract</li>
+      <li><strong>Fleet</strong> — use this if your time is allocated to a specific vehicle or machine</li>
+    </ul>
+
+    <h4>Searching and filtering the list</h4>
+    <p>
+      If there are many projects or fleet items, use the <strong>Filter / Search</strong> bar to
+      type part of the name and narrow down the list quickly.
+    </p>
+
+    <h4>Find Nearest</h4>
+    <p>
+      Tap <span class="btn-label">Find Nearest</span> to use your current GPS location to
+      automatically identify and select the closest project or fleet item to where you are
+      standing. This is the quickest option when you are already on site.
+    </p>
+
+    <h4>Find Last</h4>
+    <p>
+      Tap <span class="btn-label">Find Last</span> to instantly re-select the project or fleet
+      item you used in your most recent time period. Use this if you are on the same job as your
+      last entry and want to save time scrolling or searching.
+    </p>
+
+    <div class="tip">
+      <span class="callout-icon">✅</span>
+      <div class="callout-body">
+        <p><strong>Find Last</strong> does not use GPS — it simply recalls your previous selection. It works offline too.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── c. FLEET & EQUIPMENT ───────────────────────────────────── -->
+    <h3 id="fleet-equipment">c. Fleet &amp; Equipment</h3>
+
+    <p>
+      In addition to your primary project or fleet allocation, you can record any specific
+      vehicles or equipment you operated or used during this time period.
+    </p>
+
+    <h4>Adding equipment</h4>
+    <ol class="steps">
+      <li>In the Fleet &amp; Equipment section, tap <span class="btn-label">+ Add</span>.</li>
+      <li>Select the equipment from the list, or use the search bar to find it.</li>
+      <li>The item will be added to your time period.</li>
+    </ol>
+
+    <h4>Adding multiple items</h4>
+    <p>
+      You can add more than one piece of equipment. Repeat the steps above for each item you
+      used during this time period.
+    </p>
+
+    <h4>Removing an item</h4>
+    <p>
+      To remove an equipment item you have added by mistake, tap the <strong>remove</strong>
+      (×) icon next to the item in the list.
+    </p>
+
+    <h4>Saving your fleet selection</h4>
+    <p>
+      Your equipment selection is saved as part of the time period when you tap the main
+      <span class="btn-label">Save</span> button at the end of the form. There is no need to
+      save this section separately.
+    </p>
+
+    <hr class="section-divider">
+
+    <!-- ── d. ALLOWANCES ──────────────────────────────────────────── -->
+    <h3 id="allowances">d. Allowances</h3>
+
+    <p>
+      Allowances are additional payments beyond your basic hourly rate. The app provides two
+      types: <strong>Miscellaneous</strong> and <strong>Travel</strong>.
+    </p>
+
+    <h4>Miscellaneous Allowances</h4>
+    <p>
+      Miscellaneous allowances cover site-specific entitlements such as a site allowance, meal
+      allowance, or other agreed payments. The allowances available to you are pre-configured
+      by the office based on the project or site you are working on.
+    </p>
+    <ul>
+      <li>Tap the <strong>Miscellaneous Allowances</strong> section to expand it</li>
+      <li>Enable the allowances that apply to your work on this day</li>
+      <li>The value of each allowance is set by the office — you select whether it applies, not the amount</li>
+    </ul>
+
+    <h4>Travel Allowance</h4>
+    <p>
+      Travel allowance compensates you for travelling to a site. The calculation is based on
+      rules configured by the office (for example, a rate per mile or a flat daily rate
+      depending on distance).
+    </p>
+    <ul>
+      <li>Enable the <strong>Travel Allowance</strong> toggle if it applies to this time period</li>
+      <li>The app will calculate the allowance amount based on the project location and your configured rate</li>
+      <li>The calculated amount will be shown for your reference before you save</li>
+    </ul>
+
+    <div class="info">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>If you believe an allowance is showing the wrong amount, or an allowance you are entitled to is not listed, contact the office — allowance configuration is managed by administration.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── e. MATERIALS ───────────────────────────────────────────── -->
+    <h3 id="materials">e. Materials <span style="font-size:.85rem;font-weight:400;color:#64748b;">(Concrete Lorry Drivers only)</span></h3>
+
+    <p>
+      The Materials section is only visible to drivers of the concrete mixing lorry. It allows
+      you to record the materials loaded and delivered during this time period as part of your
+      work record.
+    </p>
+
+    <div class="note">
+      <span class="callout-icon">🔹</span>
+      <div class="callout-body">
+        <p>If you do not see a Materials section on your timesheet form, this feature has not been enabled for your account. This is expected — it is a driver-specific feature.</p>
+      </div>
+    </div>
+
+    <h4>Recording materials</h4>
+    <ol class="steps">
+      <li>Tap <span class="btn-label">+ Add Material</span>.</li>
+      <li>Select the material type from the list.</li>
+      <li>Enter the quantity.</li>
+      <li>Tap <span class="btn-label">Add</span> to save the entry.</li>
+      <li>Repeat for each material loaded during this time period.</li>
+    </ol>
+
+    <hr class="section-divider">
+
+    <!-- ── f. COMMENTS ────────────────────────────────────────────── -->
+    <h3 id="comments">f. Comments</h3>
+
+    <p>
+      The Comments field is a free-text area where you can add any relevant notes about this
+      time period. This is optional but can be useful for recording context that is not captured
+      elsewhere in the form.
+    </p>
+
+    <h4>Examples of useful comments</h4>
+    <ul>
+      <li>"Concrete pour on foundation — worked alongside groundworks crew"</li>
+      <li>"Plant breakdown from 10:00 to 12:00 — waiting on repairs"</li>
+      <li>"Assisted delivery driver in afternoon"</li>
+      <li>"Site access delayed — started 45 minutes late due to gate issue"</li>
+    </ul>
+
+    <div class="tip">
+      <span class="callout-icon">✅</span>
+      <div class="callout-body">
+        <p>Comments are visible to your supervisor when reviewing timesheets. Keep them factual and professional.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── g. SUBMISSION POPUP ────────────────────────────────────── -->
+    <h3 id="submission-popup">g. Reviewing Before Saving</h3>
+
+    <p>
+      Before your time period is saved to the system, the app displays a
+      <strong>submission summary popup</strong>. This is your opportunity to check all the
+      details are correct before confirming.
+    </p>
+
+    <h4>What the popup shows</h4>
+    <ul>
+      <li>Date and day of the week</li>
+      <li>Start time, end time, and total hours worked</li>
+      <li>Break duration</li>
+      <li>Project or fleet item selected</li>
+      <li>Equipment items added</li>
+      <li>Allowances applied and their values</li>
+      <li>Materials (if applicable)</li>
+      <li>Your comment (if entered)</li>
+    </ul>
+
+    <h4>Confirming or going back</h4>
+    <ul>
+      <li>If everything is correct, tap <span class="btn-label">Confirm &amp; Save</span> to submit the time period</li>
+      <li>If something is wrong, tap <span class="btn-label">Go Back</span> (or close the popup) to return to the form and make corrections</li>
+    </ul>
+
+    <div class="warning">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>Always review the summary carefully. Once saved, a time period can still be edited, but only within a set window of time. After that window closes, corrections require supervisor approval.</p>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════════
+         MY TIMESHEET
+    ═════════════════════════════════════════════════════════════════ -->
+    <hr class="section-divider">
+    <h2 id="my-timesheet">My Timesheet — Viewing, Editing &amp; Deleting</h2>
+
+    <p>
+      <strong>My Timesheet</strong> shows all the time periods you have submitted, organised by
+      date. Use it to check what you have entered, make corrections, or remove incorrect entries.
+    </p>
+
+    <ol class="steps">
+      <li>From the main menu, tap <strong>My Timesheet</strong>.</li>
+      <li>Your list of submitted time periods will appear, most recent at the top.</li>
+      <li>Tap any time period to open its full details.</li>
+    </ol>
+
+    <h3 id="viewing">Viewing a Time Period</h3>
+    <p>
+      Tapping a time period opens a read-only summary of everything recorded for that entry —
+      date, hours, project/fleet, equipment, allowances, and comments.
+    </p>
+
+    <h3 id="editing">Editing a Time Period</h3>
+    <p>
+      If you made a mistake on a saved time period, you can edit it while it is still within the
+      editable window (your employer sets this window — typically the same day or within a few days).
+    </p>
+
+    <ol class="steps">
+      <li>Open the time period you want to edit.</li>
+      <li>Tap the <span class="btn-label">Edit</span> button (pencil icon).</li>
+      <li>Make the necessary changes to any field.</li>
+      <li>Tap <span class="btn-label">Save</span> and confirm in the popup.</li>
+    </ol>
+
+    <div class="info">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>If the Edit button is greyed out or not visible, the editable window for that time period has closed. Contact your supervisor to request an amendment.</p>
+      </div>
+    </div>
+
+    <h3 id="deleting">Deleting a Time Period</h3>
+    <p>
+      If you have added a time period in error (for example, a duplicate entry), you can delete
+      it while it is within the editable window.
+    </p>
+
+    <ol class="steps">
+      <li>Open the time period you want to delete.</li>
+      <li>Tap the <span class="btn-label">Delete</span> button (bin icon).</li>
+      <li>A confirmation prompt will appear — tap <strong>Confirm</strong> to delete permanently.</li>
+    </ol>
+
+    <div class="warning">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>Deletion cannot be undone. Only delete a time period if you are certain it was entered in error.</p>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════════
+         MY HOURS
+    ═════════════════════════════════════════════════════════════════ -->
+    <hr class="section-divider">
+    <h2 id="my-hours">My Hours</h2>
+
+    <p>
+      <strong>My Hours</strong> gives you a simple summary of the hours recorded across your
+      submitted time periods. Use it to check your running total for the week or pay period.
+    </p>
+
+    <ol class="steps">
+      <li>From the main menu, tap <strong>My Hours</strong>.</li>
+      <li>The screen displays a summary of your submitted time data grouped by week or pay period.</li>
+    </ol>
+
+    <h3>What My Hours shows</h3>
+    <ul>
+      <li><strong>Total hours</strong> submitted for the current period</li>
+      <li>A breakdown of hours by day</li>
+      <li>The status of your submission (submitted / pending supervisor approval)</li>
+    </ul>
+
+    <div class="tip">
+      <span class="callout-icon">✅</span>
+      <div class="callout-body">
+        <p>My Hours shows the data you have entered in the app. If a time period is still pending approval it may not yet be reflected in your payroll — check with the office if you have queries about your pay.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  &copy; 2025 DWCE. All rights reserved.
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>

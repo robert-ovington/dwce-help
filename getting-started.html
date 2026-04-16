@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Getting Started | DWCE Help Centre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="logo">
+      <span class="logo-text">DWCE</span>
+      <span class="logo-sub">Help Centre</span>
+    </a>
+  </div>
+</header>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<nav class="sidebar" id="sidebar">
+  <div class="nav-label">Phase 1 — Workers</div>
+  <a href="getting-started.html" class="nav-link">Getting Started</a>
+  <a href="login.html"           class="nav-link">Login &amp; Password</a>
+  <a href="clocking.html"        class="nav-link">Clocking In &amp; Out</a>
+  <a href="messages.html"        class="nav-link">Messages</a>
+  <a href="timesheets.html"      class="nav-link">Timesheets</a>
+  <a href="plant-checks.html"    class="nav-link">Plant Checks</a>
+  <a href="deliveries.html"      class="nav-link">Deliveries</a>
+</nav>
+
+<main class="content">
+  <div class="content-inner">
+
+    <div class="breadcrumb"><a href="index.html">Home</a><span>Getting Started</span></div>
+    <h1>Getting Started</h1>
+    <p class="page-intro">An overview of the DWCE Time Tracker app, how GPS is used to help you, and how your data is protected.</p>
+
+    <div class="toc">
+      <div class="toc-title">On this page</div>
+      <ul>
+        <li><a href="#overview">What is DWCE Time Tracker?</a></li>
+        <li><a href="#gps">How GPS Works in the App</a></li>
+        <li><a href="#gdpr">GDPR &amp; Your Privacy</a></li>
+      </ul>
+    </div>
+
+    <!-- ── OVERVIEW ──────────────────────────────────────────────── -->
+    <h2 id="overview">What is DWCE Time Tracker?</h2>
+
+    <p>
+      <strong>DWCE Time Tracker</strong> is the company's mobile app for recording everything
+      that happens on site and in the yard. It replaces paper timesheets, handwritten check
+      sheets and delivery dockets with a single, easy-to-use app on your phone.
+    </p>
+
+    <p>As a site worker, you will use the app to:</p>
+    <ul>
+      <li>Clock in and out at the start and end of your working day</li>
+      <li>Submit your daily timesheet — the hours you worked, the project or vehicle you were on, any allowances, and equipment used</li>
+      <li>Complete pre-start plant checks before operating large equipment</li>
+      <li>Check small plant and tools at your location and report any faults</li>
+      <li>Record aggregate and waste deliveries</li>
+      <li>Read messages from your supervisor or the office</li>
+    </ul>
+
+    <div class="tip">
+      <span class="callout-icon">✅</span>
+      <div class="callout-body">
+        <p>Everything you submit goes straight to the office in real time — no need to hand in paper at the end of the week.</p>
+      </div>
+    </div>
+
+    <h3>What you will need</h3>
+    <ul>
+      <li>An Android or iOS smartphone</li>
+      <li>Your login credentials — provided by your employer</li>
+      <li>Location (GPS) permissions enabled for the app — required for clocking and site-based features</li>
+      <li>An internet connection (mobile data or Wi-Fi) to submit records</li>
+    </ul>
+
+    <hr class="section-divider">
+
+    <!-- ── GPS ──────────────────────────────────────────────────── -->
+    <h2 id="gps">How GPS Works in the App</h2>
+
+    <p>
+      DWCE Time Tracker uses your phone's GPS in specific, clearly defined ways to make the app
+      easier to use and to verify site attendance. The app does <strong>not</strong> track your
+      location continuously or outside of the actions described below.
+    </p>
+
+    <h3>When your location is used</h3>
+
+    <h4>1. Clocking In &amp; Out</h4>
+    <p>
+      When you clock in or out, your location at that moment is recorded. This confirms you were
+      on or near the work site when you started and finished your shift. The location is attached
+      to your clocking record and is visible to your supervisor.
+    </p>
+
+    <h4>2. Find Nearest — Timesheet Project / Fleet</h4>
+    <p>
+      When adding a time period to your timesheet, tapping the <span class="btn-label">Find Nearest</span>
+      button uses your current GPS position to automatically suggest the closest project or fleet
+      item to where you are standing. This saves you time searching through a long list.
+    </p>
+
+    <h4>3. Find Last — Timesheet Project / Fleet</h4>
+    <p>
+      The <span class="btn-label">Find Last</span> button recalls the project or fleet item you
+      selected most recently. Your location is not used for this function — it simply saves you
+      re-selecting the same item if you are on the same job as yesterday.
+    </p>
+
+    <h4>4. Plant Location</h4>
+    <p>
+      Site-based features such as plant checks and asset checks may use your location to confirm
+      which site or area you are working in.
+    </p>
+
+    <div class="info">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>
+          Your location is only read at the moment you perform one of the actions above.
+          The app does <strong>not</strong> run in the background tracking your movements
+          throughout the day.
+        </p>
+      </div>
+    </div>
+
+    <h3>Granting location permission</h3>
+    <p>The first time you use a location-based feature, your phone will ask you to allow the app
+    to access your location. You should select <strong>"While using the app"</strong> or
+    <strong>"Allow"</strong>. Without this permission the clocking and Find Nearest features
+    will not work.</p>
+
+    <div class="warning">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>If you previously denied location permission, go to your phone's <strong>Settings → Apps → DWCE Time Tracker → Permissions → Location</strong> and enable it.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── GDPR ──────────────────────────────────────────────────── -->
+    <h2 id="gdpr">GDPR &amp; Your Privacy</h2>
+
+    <p>
+      DWCE is committed to handling your personal data in accordance with the
+      <strong>UK General Data Protection Regulation (UK GDPR)</strong> and the
+      <strong>Data Protection Act 2018</strong>. This section explains what data the app
+      collects, why, and your rights.
+    </p>
+
+    <h3>What data is collected</h3>
+    <ul>
+      <li><strong>Identity data:</strong> Your name and work email address</li>
+      <li><strong>Attendance data:</strong> Clock-in and clock-out times and your GPS location at those moments</li>
+      <li><strong>Timesheet data:</strong> Hours worked, project or vehicle allocated, equipment used, allowances claimed, and any comments you add</li>
+      <li><strong>Inspection data:</strong> Results of plant pre-start checks and asset checks you complete, including any fault photos you take</li>
+      <li><strong>Delivery data:</strong> Details of aggregate and waste deliveries you record, including your captured signature</li>
+    </ul>
+
+    <h3>Why we collect it</h3>
+    <ul>
+      <li>To calculate your pay accurately (timesheet and attendance data)</li>
+      <li>To meet legal obligations for health and safety record-keeping (plant checks)</li>
+      <li>To fulfil contractual obligations with clients (delivery records)</li>
+      <li>To manage company assets and equipment effectively</li>
+    </ul>
+
+    <h3>Legal basis</h3>
+    <p>
+      The lawful basis for processing this data is the <strong>performance of your employment
+      contract</strong> (Article 6(1)(b) UK GDPR). Some health and safety records are also
+      processed to comply with a <strong>legal obligation</strong> (Article 6(1)(c) UK GDPR).
+    </p>
+
+    <h3>How long your data is kept</h3>
+    <p>
+      Employment and payroll records are retained for a minimum of <strong>6 years</strong>
+      following the end of your employment, in line with HMRC requirements. Health and safety
+      records may be retained for longer periods where required by law.
+    </p>
+
+    <h3>Who can see your data</h3>
+    <ul>
+      <li>Your direct supervisor and site manager (attendance, timesheets, checks)</li>
+      <li>The payroll team (timesheet and allowance data)</li>
+      <li>Company management (aggregated reports)</li>
+      <li>DWCE's secure cloud database provider — data is stored in an encrypted database and is not shared with any third party for marketing or commercial purposes</li>
+    </ul>
+
+    <h3>Your rights</h3>
+    <p>Under UK GDPR you have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> a copy of the personal data held about you</li>
+      <li><strong>Correct</strong> any inaccurate data</li>
+      <li><strong>Erasure</strong> of data in certain circumstances (note: some records must be kept by law)</li>
+      <li><strong>Object</strong> to processing where you believe it is not justified</li>
+    </ul>
+
+    <div class="tip">
+      <span class="callout-icon">✅</span>
+      <div class="callout-body">
+        <p>To exercise any of your data rights, contact your supervisor or the DWCE office. All requests are handled within <strong>30 days</strong>.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  &copy; 2025 DWCE. All rights reserved.
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>
