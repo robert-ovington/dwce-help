@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshop | DWCE Help Centre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="logo">
+      <span class="logo-text">DWCE</span>
+      <span class="logo-sub">Help Centre</span>
+    </a>
+  </div>
+</header>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<nav class="sidebar" id="sidebar">
+  <div class="nav-label">Phase 1 — Workers</div>
+  <a href="getting-started.html" class="nav-link">Getting Started</a>
+  <a href="login.html"           class="nav-link">Login &amp; Password</a>
+  <a href="clocking.html"        class="nav-link">Clocking In &amp; Out</a>
+  <a href="messages.html"        class="nav-link">Messages</a>
+  <a href="timesheets.html"      class="nav-link">Timesheets</a>
+  <a href="plant-checks.html"    class="nav-link">Plant Checks</a>
+  <a href="deliveries.html"      class="nav-link">Deliveries</a>
+  <a href="dashboard.html"       class="nav-link">Dashboard</a>
+  <div class="nav-label">Workshop</div>
+  <a href="workshop.html"        class="nav-link">Workshop</a>
+</nav>
+
+<main class="content">
+  <div class="content-inner">
+
+    <div class="breadcrumb"><a href="index.html">Home</a><span>Workshop</span></div>
+    <h1>Workshop</h1>
+    <p class="page-intro">The Workshop module lets mechanics conduct plant inspections, raise and manage Work Orders, track parts and materials, and view the service register. Access is role-controlled — contact your administrator if any section is missing from your menu.</p>
+
+    <div class="toc">
+      <div class="toc-title">On this page</div>
+      <ul>
+        <li><a href="#access">Accessing Workshop</a></li>
+        <li><a href="#inspection-report">Inspection Report</a></li>
+        <li><a href="#inspection-log">Inspection Log</a></li>
+        <li><a href="#work-orders">Work Orders</a></li>
+        <li><a href="#work-order-detail">Inside a Work Order</a></li>
+        <li><a href="#vehicle-parts-lists">Vehicle Parts Lists</a></li>
+        <li><a href="#service-register">Service Register</a></li>
+        <li><a href="#dashboard-widgets">Workshop Dashboard Cards</a></li>
+      </ul>
+    </div>
+
+    <!-- ── ACCESS ─────────────────────────────────────────────────────────── -->
+    <h2 id="access">Accessing Workshop</h2>
+
+    <p>
+      From the <strong>Main Menu</strong>, tap <strong>Workshop</strong> to expand the section. The
+      following items are available to workshop-role users:
+    </p>
+
+    <table style="width:100%;border-collapse:collapse;margin-bottom:1rem;">
+      <thead>
+        <tr style="background:#f1f5f9;text-align:left;">
+          <th style="padding:8px 12px;border:1px solid #e2e8f0;">Menu item</th>
+          <th style="padding:8px 12px;border:1px solid #e2e8f0;">What it does</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Inspection Report</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">Conduct a structured inspection on a piece of plant</td>
+        </tr>
+        <tr style="background:#f8fafc;">
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Inspection Log</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">Browse and review previously submitted inspection reports</td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Work Orders</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">View, claim, and complete job cards for plant repairs</td>
+        </tr>
+        <tr style="background:#f8fafc;">
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Vehicle Parts Lists</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">View and manage named parts lists per vehicle</td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Service Register</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">Track scheduled maintenance and CVRT due dates for all plant</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="info">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>A separate <strong>Workshop Admin</strong> section appears for users with the Workshop Admin role. This covers inspection configuration, WO templates, inventory management, and fleet setup — see your administrator for guidance on those screens.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── INSPECTION REPORT ─────────────────────────────────────────────── -->
+    <h2 id="inspection-report">Inspection Report</h2>
+
+    <p>
+      Use this to carry out a formal plant inspection. The questions you are asked depend on the
+      <strong>inspection configuration</strong> chosen — a configuration is a template that defines
+      which questions apply to a particular type of vehicle or plant.
+    </p>
+
+    <h3>Starting an inspection</h3>
+    <ol class="steps">
+      <li>Tap <strong>Workshop → Inspection Report</strong>.</li>
+      <li>Select an <strong>Inspection Config</strong> from the dropdown (e.g. "Road Vehicle — Full" or "Large Plant — Daily").</li>
+      <li>Select the <strong>plant item</strong> you are inspecting from the second dropdown.</li>
+      <li>If the config requires a clock reading, enter the current reading.</li>
+      <li>Tap <span class="btn-label">Start Inspection</span>.</li>
+    </ol>
+
+    <h3>Completing inspection questions</h3>
+    <p>
+      Questions are shown one section at a time. Each question may have one of the following
+      answer types:
+    </p>
+    <ul>
+      <li><strong>Check</strong> — Pass / Fault / Monitor (tap to select).</li>
+      <li><strong>Text</strong> — Type a free-text answer.</li>
+      <li><strong>Numeric / Percentage</strong> — Enter a measured value.</li>
+      <li><strong>List</strong> — Select from a predefined list of options.</li>
+    </ul>
+    <p>
+      Mark a question as <strong>Fault</strong> if it requires repair. Mark as <strong>Monitor</strong>
+      if it needs watching but does not require immediate action. You can add a comment and attach
+      a photo to any question.
+    </p>
+
+    <h3>Resuming a draft</h3>
+    <p>
+      If you start an inspection and leave before submitting, it is saved as a
+      <strong>draft</strong>. When you next open Inspection Report, any drafts in progress are
+      shown at the top of the screen. Tap a draft to resume where you left off.
+    </p>
+
+    <h3>Submitting</h3>
+    <p>
+      When all questions are answered, tap <span class="btn-label">Submit</span>. The report is
+      saved and any questions marked as <em>Fault</em> or <em>Monitor</em> are automatically
+      available to be linked to a Work Order.
+    </p>
+
+    <hr class="section-divider">
+
+    <!-- ── INSPECTION LOG ────────────────────────────────────────────────── -->
+    <h2 id="inspection-log">Inspection Log</h2>
+
+    <p>
+      The Inspection Log shows a searchable history of all submitted inspection reports across
+      all plant. Use it to review previous reports, check a vehicle's inspection history, or
+      follow up on flagged faults.
+    </p>
+
+    <p>You can filter the log by plant, date range, and inspection config. Tap any row to view the full report including individual question responses and any photos attached.</p>
+
+    <hr class="section-divider">
+
+    <!-- ── WORK ORDERS ───────────────────────────────────────────────────── -->
+    <h2 id="work-orders">Work Orders</h2>
+
+    <p>
+      Work Orders are job cards for plant maintenance and repairs. The screen opens with three
+      tabs:
+    </p>
+
+    <table style="width:100%;border-collapse:collapse;margin-bottom:1rem;">
+      <thead>
+        <tr style="background:#f1f5f9;text-align:left;">
+          <th style="padding:8px 12px;border:1px solid #e2e8f0;">Tab</th>
+          <th style="padding:8px 12px;border:1px solid #e2e8f0;">What it shows</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Open</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">All Work Orders with status Open, In Progress, Scheduled, or Waiting on Parts</td>
+        </tr>
+        <tr style="background:#f8fafc;">
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Mine</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">Work Orders assigned to you that are not yet completed</td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Completed</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">The 50 most recently completed Work Orders</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Reading the grid</h3>
+    <p>
+      Each row shows the <strong>Priority</strong> (Low / Normal / High / Urgent),
+      <strong>Status</strong>, <strong>Plant</strong> description, <strong>Title</strong>,
+      <strong>Location</strong>, <strong>Assigned</strong> mechanic,
+      <strong>Scheduled</strong> date, and counts of linked <strong>Faults</strong> and
+      <strong>Tasks</strong>.
+    </p>
+
+    <h3>Filtering the list</h3>
+    <ul>
+      <li>Type in the <strong>Search all columns</strong> box to filter across every field at once.</li>
+      <li>Type in a column header's filter box to narrow by that column only.</li>
+      <li>Use the <strong>Day / Week / Month</strong> chips to filter by scheduled (or completed) date, then use the arrow buttons to step through periods.</li>
+    </ul>
+
+    <h3>Creating a Work Order</h3>
+    <ol class="steps">
+      <li>Tap <span class="btn-label">+ New WO</span> (bottom-right of the screen).</li>
+      <li>Enter a title, select the plant, set the priority and optionally a scheduled date.</li>
+      <li>Optionally choose a <strong>WO Template</strong> — this pre-fills a standard task checklist.</li>
+      <li>Tap <span class="btn-label">Save</span>.</li>
+    </ol>
+
+    <hr class="section-divider">
+
+    <!-- ── WORK ORDER DETAIL ──────────────────────────────────────────────── -->
+    <h2 id="work-order-detail">Inside a Work Order</h2>
+
+    <p>
+      Tap any row in the Work Orders list to open the detail screen. The title bar shows the
+      WO title, plant description, and a unique reference number (e.g.
+      <code>000042-282-001</code>). A status bar below the title shows
+      status, priority, location, clock reading at creation, and progress counts.
+    </p>
+
+    <h3>Claiming a Work Order</h3>
+    <p>
+      If a WO is <em>Open</em> and not yet assigned, you will see a
+      <span class="btn-label">Claim WO</span> button. Tapping this assigns it to you and moves the
+      status to <em>In Progress</em>.
+    </p>
+
+    <h3>Completing a Work Order</h3>
+    <ol class="steps">
+      <li>Tap <span class="btn-label">Complete WO</span>.</li>
+      <li>If there are unresolved faults or incomplete tasks, a confirmation dialog is shown — you can proceed or go back to finish them first.</li>
+      <li>Enter the final <strong>clock reading</strong> (optional) and tap <span class="btn-label">Complete WO</span>.</li>
+    </ol>
+
+    <h3>Tabs inside the Work Order</h3>
+
+    <p>The detail screen has six tabs:</p>
+
+    <table style="width:100%;border-collapse:collapse;margin-bottom:1rem;">
+      <thead>
+        <tr style="background:#f1f5f9;text-align:left;">
+          <th style="padding:8px 12px;border:1px solid #e2e8f0;">Tab</th>
+          <th style="padding:8px 12px;border:1px solid #e2e8f0;">What it contains</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Faults</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">Faults linked from an inspection report. Update each fault's status using the dropdown (e.g. Repaired, Monitored). Add notes directly on the fault card. Fault count shown as a red badge when faults remain open.</td>
+        </tr>
+        <tr style="background:#f8fafc;">
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Tasks</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">A checklist of work steps. Tick each task as you go. Tap <span class="btn-label">Add Task</span> to add steps not on the template. Completed tasks are struck through and highlighted green.</td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Tools</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">Record small plant items needed for the job (e.g. a welder, a torque wrench). Use the search button to pick from the small plant register.</td>
+        </tr>
+        <tr style="background:#f8fafc;">
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Parts</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">Record consumable parts used. Search the parts inventory by name or barcode, set the quantity and unit. Parts can be linked to a specific fault.</td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Materials</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">Record workshop materials used (e.g. oils, fluids, consumables). Works the same way as Parts but draws from the materials inventory.</td>
+        </tr>
+        <tr style="background:#f8fafc;">
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Photos</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">Attach before/after photos of the work. Photos can be linked to a specific fault. Add a caption for each photo.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="tip">
+      <span class="callout-icon">✅</span>
+      <div class="callout-body">
+        <p>The status bar at the top of the Work Order screen shows live progress counts — for example "Faults 2/3" means two of three faults have been resolved. Green indicates all items are done.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── VEHICLE PARTS LISTS ───────────────────────────────────────────── -->
+    <h2 id="vehicle-parts-lists">Vehicle Parts Lists</h2>
+
+    <p>
+      Vehicle Parts Lists let you store a standard set of parts for a vehicle so they can be
+      bulk-loaded into a Work Order rather than added one by one.
+    </p>
+
+    <p>
+      On the main screen you can filter the lists by vehicle. Each list shows the vehicle it
+      belongs to, the number of line items, and optionally a linked WO Template. Tap a list to
+      view and manage its items.
+    </p>
+
+    <p>
+      When creating or editing a Work Order, if a matching parts list exists for the selected
+      vehicle, you can load it directly into the Parts tab rather than entering each part manually.
+    </p>
+
+    <hr class="section-divider">
+
+    <!-- ── SERVICE REGISTER ──────────────────────────────────────────────── -->
+    <h2 id="service-register">Service Register</h2>
+
+    <p>
+      The Service Register shows the maintenance status of every registered vehicle and plant
+      item. Each row displays:
+    </p>
+    <ul>
+      <li><strong>Plant description</strong></li>
+      <li><strong>Service status</strong> — OK (green), Due Soon (orange), or Overdue (red)</li>
+      <li><strong>Last service date</strong> and the interval used to calculate the next due date</li>
+      <li><strong>CVRT status</strong> — if a CVRT due date is recorded, it shows separately with the same colour coding</li>
+    </ul>
+
+    <p>
+      The list is sorted with the most urgent items at the top. Tap any row to view the full
+      service history for that vehicle, or to record a new service.
+    </p>
+
+    <div class="info">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Service intervals (how many months, km, or hours between services) are configured in <strong>Workshop Admin → Service Intervals</strong>. If a vehicle shows an incorrect status, check the interval configuration with your Workshop Manager.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── DASHBOARD WIDGETS ─────────────────────────────────────────────── -->
+    <h2 id="dashboard-widgets">Workshop Dashboard Cards</h2>
+
+    <p>
+      Workshop users have a <strong>Workshop</strong> category on their
+      <a href="dashboard.html">Dashboard</a>. The four cards available in this category give
+      quick access to the most common workshop tasks without needing to navigate the full menu.
+    </p>
+
+    <table style="width:100%;border-collapse:collapse;margin-bottom:1rem;">
+      <thead>
+        <tr style="background:#f1f5f9;text-align:left;">
+          <th style="padding:8px 12px;border:1px solid #e2e8f0;">Card</th>
+          <th style="padding:8px 12px;border:1px solid #e2e8f0;">What it shows / does</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Workshop Quick Actions</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">Four large buttons for the fitter workflow: <em>Start Inspection</em> (opens plant picker then jumps to Inspection Report), <em>Service Sheet</em> (opens plant picker for a service record), <em>Quick Job</em> (create a new WO directly from a plant selection), and <em>My Job Cards</em> (opens Work Orders → Mine tab)</td>
+        </tr>
+        <tr style="background:#f8fafc;">
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>My Work Orders</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">Count of open Work Orders assigned to you. Expand the card to see a list of titles and their status. Tap any row to open the WO detail screen.</td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Open Work Orders</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">Count of all open and in-progress WOs across the workshop. Expand to see a list with titles, locations, priorities, and statuses. Tap any row to open the WO detail screen.</td>
+        </tr>
+        <tr style="background:#f8fafc;">
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>WO Status Counts</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">A summary showing how many Work Orders exist in each status (Open, In Progress, Waiting on Parts, Completed, Cancelled). Useful for a quick workshop overview.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      You can toggle individual cards on or off and change their order from the Dashboard gear
+      icon — see the <a href="dashboard.html#widgets">Customising Your Widgets</a> section for
+      details.
+    </p>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  &copy; 2025 DWCE. All rights reserved.
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>
