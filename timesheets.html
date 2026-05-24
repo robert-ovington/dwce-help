@@ -31,6 +31,7 @@
   <a href="timesheets.html"      class="nav-link">Timesheets</a>
   <a href="plant-checks.html"    class="nav-link">Plant Checks</a>
   <a href="deliveries.html"      class="nav-link">Deliveries</a>
+  <a href="dashboard.html"       class="nav-link">Dashboard</a>
 </nav>
 
 <main class="content">
@@ -54,6 +55,7 @@
             <li><a href="#submission-popup">g. Reviewing Before Saving</a></li>
           </ul>
         </li>
+        <li><a href="#reset-to-today">Returning to Today's Date</a></li>
         <li><a href="#my-timesheet">My Timesheet — Viewing, Editing &amp; Deleting</a></li>
         <li><a href="#my-hours">My Hours</a></li>
       </ul>
@@ -148,24 +150,29 @@
       type part of the name and narrow down the list quickly.
     </p>
 
-    <h4>Find Nearest</h4>
+    <h4>Find Nearest Job</h4>
     <p>
-      Tap <span class="btn-label">Find Nearest</span> to use your current GPS location to
-      automatically identify and select the closest project or fleet item to where you are
-      standing. This is the quickest option when you are already on site.
+      Tap <span class="btn-label">Find Nearest Job</span> to use your current GPS location to
+      automatically identify and select the closest active project to where you are standing.
+      This is the quickest option when you are already on site.
+    </p>
+    <p>
+      If there are multiple nearby sites, the button changes to <span class="btn-label">Find Next</span>
+      after the first match. Keep tapping it to cycle through other nearby projects until you find
+      the correct one.
     </p>
 
-    <h4>Find Last</h4>
+    <h4>Find Last Job</h4>
     <p>
-      Tap <span class="btn-label">Find Last</span> to instantly re-select the project or fleet
-      item you used in your most recent time period. Use this if you are on the same job as your
-      last entry and want to save time scrolling or searching.
+      Tap <span class="btn-label">Find Last Job</span> to open a list of the last projects you
+      have worked on. Tap any entry to fill in the project field instantly. Use this when you are
+      returning to a familiar job and want to avoid searching.
     </p>
 
     <div class="tip">
       <span class="callout-icon">✅</span>
       <div class="callout-body">
-        <p><strong>Find Last</strong> does not use GPS — it simply recalls your previous selection. It works offline too.</p>
+        <p><strong>Find Last Job</strong> does not use GPS — it pulls from your stored project history. It works offline too.</p>
       </div>
     </div>
 
@@ -426,6 +433,18 @@
         <p>My Hours shows the data you have entered in the app. If a time period is still pending approval it may not yet be reflected in your payroll — check with the office if you have queries about your pay.</p>
       </div>
     </div>
+
+    <!-- ════════════════════════════════════════════════════════════
+         RESET TO TODAY
+    ═════════════════════════════════════════════════════════════════ -->
+    <hr class="section-divider">
+    <h2 id="reset-to-today">Returning to Today's Date</h2>
+
+    <p>
+      When filling in a time period, if you have navigated to a different date, a
+      <span class="btn-label">Reset to Today</span> button will appear next to the date field.
+      Tap it to jump back to today's date without opening the date picker again.
+    </p>
 
   </div>
 </main>

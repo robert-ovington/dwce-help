@@ -31,6 +31,7 @@
   <a href="timesheets.html"      class="nav-link">Timesheets</a>
   <a href="plant-checks.html"    class="nav-link">Plant Checks</a>
   <a href="deliveries.html"      class="nav-link">Deliveries</a>
+  <a href="dashboard.html"       class="nav-link">Dashboard</a>
 </nav>
 
 <main class="content">
@@ -55,33 +56,30 @@
     <h2 id="aggregate">Submitting an Aggregate Delivery</h2>
 
     <p>
-      Use this screen to record when aggregate materials are delivered to a job. You can record
-      <strong>multiple deliveries for the same job on the same day</strong> — for example, if a
-      lorry makes several runs.
+      Use this screen to record when aggregate materials are delivered to a job. A single record
+      can include <strong>multiple material line items</strong> — for example, if one load
+      contains several different materials.
     </p>
 
     <ol class="steps">
       <li>From the main menu, tap <strong>Deliveries → Aggregate Delivery</strong>.</li>
-      <li>Select the <strong>Job / Project</strong> the delivery is for from the dropdown list.</li>
-      <li>The <strong>date</strong> will default to today. Change it if recording a delivery from a different date.</li>
-      <li>Select the <strong>material type</strong> (e.g. Type 1 sub-base, sharp sand, gravel).</li>
-      <li>Enter the <strong>quantity</strong> and <strong>unit</strong> (e.g. tonnes, m³).</li>
-      <li>Enter the <strong>supplier</strong> name or select from the list.</li>
-      <li>Enter the <strong>delivery ticket / docket number</strong> if available.</li>
-      <li>Add any relevant <strong>notes</strong> in the comments field.</li>
-      <li>Tap <span class="btn-label">Save Delivery</span>.</li>
+      <li>Confirm the <strong>date and time</strong> of the delivery.</li>
+      <li>Select the <strong>Delivered To</strong> job site — the destination receiving the aggregate. Use <span class="btn-label">Find Nearest Job</span> or <span class="btn-label">Find Last Job</span> to fill this in quickly (see below).</li>
+      <li>In the <strong>Material Details</strong> section, select the material type and enter the quantity for each line item.</li>
+      <li>To add a second material to the same delivery, tap <span class="btn-label">+ Add Material</span>. You can add up to 10 material lines per record.</li>
+      <li>To remove a material line, tap the <strong>×</strong> icon next to it.</li>
+      <li>Optionally, tap <span class="btn-label">Add Docket Photo</span> to photograph the delivery ticket and attach it to the record.</li>
+      <li>Review and tap <span class="btn-label">Save Delivery</span>.</li>
     </ol>
 
-    <h3>Adding multiple deliveries for the same job</h3>
-    <p>
-      After saving the first delivery, you can immediately add another for the same job and date:
-    </p>
-    <ol class="steps">
-      <li>After saving, tap <span class="btn-label">+ Add Another Delivery</span>.</li>
-      <li>The job and date will pre-fill from your previous entry.</li>
-      <li>Enter the details for the next delivery and tap <span class="btn-label">Save Delivery</span>.</li>
-      <li>Repeat for as many deliveries as required.</li>
-    </ol>
+    <h3>Finding the Delivered To site</h3>
+    <p>Two shortcuts help you fill in the job site field without typing:</p>
+    <dl>
+      <dt><strong>Find Nearest Job</strong></dt>
+      <dd>Uses GPS to find the closest active project. Tap <span class="btn-label">Find Next</span> to cycle through other nearby sites if needed.</dd>
+      <dt><strong>Find Last Job</strong></dt>
+      <dd>Opens a list of recent projects for quick selection.</dd>
+    </dl>
 
     <div class="tip">
       <span class="callout-icon">✅</span>
@@ -105,13 +103,14 @@
 
     <ol class="steps">
       <li>From the main menu, tap <strong>Deliveries → Waste Delivery</strong>.</li>
-      <li>Select the <strong>Job / Project</strong> the waste is coming from.</li>
-      <li>The <strong>date</strong> will default to today.</li>
-      <li>Select the <strong>waste type</strong> from the list (one type per record — e.g. inert soil, mixed construction waste, concrete).</li>
+      <li>Confirm the <strong>date and time</strong>.</li>
+      <li>Select the <strong>Collection Site</strong> — the job or location the waste is being removed from. Use <span class="btn-label">Find Nearest Job</span> or <span class="btn-label">Find Last Job</span> to fill this in quickly.</li>
+      <li>Select the <strong>waste material</strong> from the list. The <strong>EWC code</strong> field will be filled in automatically based on the material you select — check it and adjust if needed.</li>
       <li>Enter the <strong>quantity</strong> and <strong>unit</strong>.</li>
-      <li>Enter the <strong>waste carrier name</strong> and <strong>licence number</strong> if required.</li>
-      <li>Enter the name of the <strong>waste facility</strong> where the load is being taken.</li>
-      <li>Enter the <strong>consignment / transfer note number</strong> if applicable.</li>
+      <li>If the waste is classified as hazardous, switch on the <strong>Hazardous</strong> toggle. You will then be required to enter a <strong>waste description</strong>.</li>
+      <li>If reinstatement material is being removed, tick the <strong>Reinstatement</strong> checkbox.</li>
+      <li>Select the <strong>waste facility</strong> where the load is being taken.</li>
+      <li>Enter the <strong>waste carrier</strong> and licence number if required.</li>
     </ol>
 
     <h3>Driver signature</h3>
@@ -124,26 +123,26 @@
       <li>If your signature needs updating, contact the office to have it reset</li>
     </ul>
 
-    <h3>Waste facility signature</h3>
+    <h3>Receiver (facility) signature</h3>
     <p>
       If the waste facility requires a signature from their staff to confirm receipt, you can
       capture it in the app:
     </p>
     <ol class="steps">
-      <li>At the waste facility, tap <span class="btn-label">Add Facility Signature</span>.</li>
+      <li>At the waste facility, tap <span class="btn-label">Add Receiver Signature</span>.</li>
       <li>Hand your phone to the facility operative.</li>
       <li>They sign directly on the screen using their finger.</li>
       <li>Tap <span class="btn-label">Accept Signature</span> to save it.</li>
     </ol>
 
-    <ol class="steps" style="counter-reset: step 9;">
+    <ol class="steps" style="counter-reset: step 10;">
       <li>Review all details and tap <span class="btn-label">Save Delivery</span>.</li>
     </ol>
 
     <div class="warning">
       <span class="callout-icon">⚠️</span>
       <div class="callout-body">
-        <p>Each waste delivery record must have a single waste type. If you are carrying mixed waste types in separate loads, create a separate record for each.</p>
+        <p>Each waste delivery record covers a single waste type. If you are moving different waste types in separate loads, create a separate record for each.</p>
       </div>
     </div>
 

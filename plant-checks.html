@@ -31,6 +31,7 @@
   <a href="timesheets.html"      class="nav-link">Timesheets</a>
   <a href="plant-checks.html"    class="nav-link">Plant Checks</a>
   <a href="deliveries.html"      class="nav-link">Deliveries</a>
+  <a href="dashboard.html"       class="nav-link">Dashboard</a>
 </nav>
 
 <main class="content">
@@ -45,9 +46,10 @@
       <ul>
         <li><a href="#large-plant">Large Plant</a>
           <ul>
-            <li><a href="#large-plant-config">a. Configuring for First Time Use</a></li>
-            <li><a href="#large-plant-fault">b. Recording a Fault &amp; Adding a Photo</a></li>
+            <li><a href="#large-plant-select">a. Selecting a Machine</a></li>
+            <li><a href="#large-plant-config">b. First-Time Setup</a></li>
             <li><a href="#large-plant-prestart">c. Submitting a Pre-Start Check</a></li>
+            <li><a href="#large-plant-fault">d. Recording a Fault &amp; Adding a Photo</a></li>
           </ul>
         </li>
         <li><a href="#small-plant">Small Plant</a>
@@ -68,58 +70,131 @@
     <p>
       Large plant refers to heavy machinery and vehicles — excavators, dumpers, rollers, lorries,
       and similar equipment. Before operating any large plant, a <strong>pre-start check</strong>
-      must be completed. The first time you use a particular machine in the app, you will need to
-      configure it.
+      must be completed. The first time you check a particular machine the app will walk you
+      through a one-off setup before starting the inspection.
     </p>
 
     <hr class="section-divider">
 
-    <!-- ── a. FIRST TIME CONFIG ───────────────────────────────────── -->
-    <h3 id="large-plant-config">a. Configuring for First Time Use</h3>
-
-    <p>
-      Before you can complete a pre-start check for a machine, it must be set up in the app.
-      This only needs to be done once per machine.
-    </p>
+    <!-- ── a. SELECTING A MACHINE ────────────────────────────────── -->
+    <h3 id="large-plant-select">a. Selecting a Machine</h3>
 
     <ol class="steps">
-      <li>From the main menu, tap <strong>Plant Checks</strong> then <strong>Large Plant</strong>.</li>
-      <li>If the machine you want to check is not listed, tap <span class="btn-label">Configure</span> or the settings icon.</li>
-      <li>Select the machine from the available list, or search for it by name or registration.</li>
-      <li>Confirm the machine details shown on screen are correct (machine type, registration/ID, site location).</li>
-      <li>Tap <span class="btn-label">Save Configuration</span>.</li>
-      <li>The machine will now appear in your pre-start check list.</li>
+      <li>From the main menu, tap <strong>Plant Checks → Large Plant</strong>.</li>
+      <li>Type part of the machine number or description in the search field to filter the list.</li>
+      <li>Tap the machine you want to check.</li>
     </ol>
+
+    <h4>Check Saved Plant</h4>
+    <p>
+      If you regularly operate the same machines, tap <span class="btn-label">Check Saved Plant</span>
+      to open a shortcut list of up to six vehicles saved to your profile. Tap any entry to go
+      straight to that machine's check without searching.
+    </p>
 
     <div class="info">
       <span class="callout-icon">ℹ️</span>
       <div class="callout-body">
-        <p>If the machine you need is not available in the list, contact the office — new plant items are added by an administrator.</p>
+        <p>Your saved fleet vehicles are set up by the office. If you need them updated, contact your supervisor.</p>
       </div>
     </div>
 
     <hr class="section-divider">
 
-    <!-- ── b. RECORDING A FAULT ───────────────────────────────────── -->
-    <h3 id="large-plant-fault">b. Recording a Fault &amp; Adding a Photo</h3>
+    <!-- ── b. FIRST-TIME SETUP ───────────────────────────────────── -->
+    <h3 id="large-plant-config">b. First-Time Setup</h3>
 
     <p>
-      If you find a defect or fault on a piece of large plant — before, during, or after a
-      pre-start check — you must report it immediately using the fault report screen.
+      The first time you select a machine that has not been configured before, the app runs a
+      one-off setup. This only needs to be done <strong>once per machine</strong>. Future checks
+      will skip straight to the inspection.
     </p>
 
     <ol class="steps">
-      <li>From the Large Plant screen, select the machine with the fault.</li>
-      <li>Tap <span class="btn-label">Report Fault</span>.</li>
-      <li>Select the <strong>fault category</strong> from the list (e.g. engine, tyres, hydraulics, lights).</li>
-      <li>Enter a <strong>description</strong> of the fault in the text field — be as specific as possible.</li>
+      <li><strong>Intro</strong> — a brief overview of the setup process is shown. Tap <span class="btn-label">Start Setup</span> to begin.</li>
+      <li><strong>Clock / Odometer</strong> — confirm whether this machine has a clock, hour-meter, or odometer. If yes, select the unit (Hours, Kilometres, or Miles).</li>
+      <li><strong>Questions</strong> — work through the inspection questions one by one. For each question, tap:
+        <ul>
+          <li><span class="btn-label" style="background:#059669;">Pass</span> — the item is applicable and currently in good condition</li>
+          <li><span class="btn-label" style="background:#dc2626;">Fault</span> — the item is applicable but has a defect (you will be asked to describe it)</li>
+          <li><span class="btn-label">N/A</span> — the question does not apply to this machine (it will be hidden in all future checks for this machine)</li>
+        </ul>
+      </li>
+      <li><strong>Review</strong> — confirm the setup summary and tap <span class="btn-label">Save Configuration</span>.</li>
+    </ol>
+
+    <p>
+      The setup responses also count as your first inspection. Any faults you record during setup
+      are submitted immediately.
+    </p>
+
+    <div class="tip">
+      <span class="callout-icon">✅</span>
+      <div class="callout-body">
+        <p>Marking a question as N/A removes it permanently from future checks for that machine. Only use N/A if the question genuinely cannot apply (for example, a "trailer coupling" question on a machine that has no trailer).</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── c. PRE-START CHECK ─────────────────────────────────────── -->
+    <h3 id="large-plant-prestart">c. Submitting a Pre-Start Check</h3>
+
+    <p>
+      A pre-start check must be completed before you operate a piece of large plant each day.
+    </p>
+
+    <ol class="steps">
+      <li>Select the machine (see <a href="#large-plant-select">Selecting a Machine</a> above).</li>
+      <li>The <strong>Details</strong> screen appears. Confirm the date and, if the machine has a clock, enter the current reading.
+        <ul>
+          <li>If a reading was recorded within the past 7 days, the app will pre-fill the field with that value as a starting point — update it to the current reading before continuing.</li>
+        </ul>
+      </li>
+      <li>Work through the checklist items one by one. For each item, tap:
+        <ul>
+          <li><span class="btn-label" style="background:#059669;">Pass</span> — item is in good condition</li>
+          <li><span class="btn-label" style="background:#dc2626;">Fault</span> — item has a defect (describe it and optionally add a photo)</li>
+        </ul>
+      </li>
+      <li>Only the questions marked as applicable during setup are shown — N/A questions are hidden.</li>
+      <li>Once all items are answered, tap <span class="btn-label">Submit Check</span>.</li>
+    </ol>
+
+    <div class="warning">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>Do not rush through the checklist by tapping Pass on everything without physically checking each item. Pre-start checks are a legal safety requirement and must be completed honestly.</p>
+      </div>
+    </div>
+
+    <div class="info">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Your supervisor is notified automatically when a check is submitted with one or more faults.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── d. RECORDING A FAULT ───────────────────────────────────── -->
+    <h3 id="large-plant-fault">d. Recording a Fault &amp; Adding a Photo</h3>
+
+    <p>
+      If you find a defect or fault on a piece of large plant — before, during, or after a
+      pre-start check — you must report it immediately.
+    </p>
+
+    <ol class="steps">
+      <li>During a check, tap <span class="btn-label" style="background:#dc2626;">Fault</span> on the relevant checklist item.</li>
+      <li>Enter a <strong>description</strong> of the fault — be as specific as possible.</li>
       <li>To add a photo, tap <span class="btn-label">Add Photo</span>:
         <ul>
           <li>Choose <strong>Take Photo</strong> to use your camera directly</li>
-          <li>Or choose <strong>Choose from Gallery</strong> if you already have a photo saved</li>
+          <li>Or choose <strong>Choose from Gallery</strong> to use an existing photo</li>
         </ul>
       </li>
-      <li>Review the fault details and photo, then tap <span class="btn-label">Submit Fault</span>.</li>
+      <li>Tap <span class="btn-label">Next</span> to continue to the next checklist item.</li>
     </ol>
 
     <div class="warning">
@@ -136,47 +211,7 @@
     <div class="tip">
       <span class="callout-icon">✅</span>
       <div class="callout-body">
-        <p>Photos are extremely helpful for the maintenance team. Try to photograph the fault clearly, close-up, in good light. Include a wider shot showing where on the machine the fault is.</p>
-      </div>
-    </div>
-
-    <hr class="section-divider">
-
-    <!-- ── c. PRE-START CHECK ─────────────────────────────────────── -->
-    <h3 id="large-plant-prestart">c. Submitting a Pre-Start Check</h3>
-
-    <p>
-      A pre-start check must be completed before you operate a piece of large plant each day.
-      It confirms the machine is safe and fit for use.
-    </p>
-
-    <ol class="steps">
-      <li>From the main menu, tap <strong>Plant Checks → Large Plant</strong>.</li>
-      <li>Select the machine you are about to operate from the list.</li>
-      <li>Tap <span class="btn-label">New Pre-Start Check</span>.</li>
-      <li>Work through the checklist items displayed on screen. For each item, tap:
-        <ul>
-          <li><span class="btn-label" style="background:#059669;">Pass</span> — if the item is in good condition and working correctly</li>
-          <li><span class="btn-label" style="background:#dc2626;">Fail</span> — if the item has a defect or is not working</li>
-        </ul>
-      </li>
-      <li>For any item you mark as <strong>Fail</strong>, you will be prompted to add a description and optionally a photo. Complete this before continuing.</li>
-      <li>Once all checklist items are answered, tap <span class="btn-label">Review &amp; Submit</span>.</li>
-      <li>Review the summary of your check — passed, failed, and any notes.</li>
-      <li>Tap <span class="btn-label">Submit Check</span> to confirm.</li>
-    </ol>
-
-    <div class="warning">
-      <span class="callout-icon">⚠️</span>
-      <div class="callout-body">
-        <p>Do not rush through the checklist by tapping Pass on everything without physically checking each item. Pre-start checks are a legal safety requirement and must be completed honestly.</p>
-      </div>
-    </div>
-
-    <div class="info">
-      <span class="callout-icon">ℹ️</span>
-      <div class="callout-body">
-        <p>Your supervisor is notified automatically when a check is submitted with one or more failed items.</p>
+        <p>Photos are extremely helpful for the maintenance team. Photograph the fault clearly, close-up, in good light, and include a wider shot showing where on the machine the fault is located.</p>
       </div>
     </div>
 

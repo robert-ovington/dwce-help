@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | DWCE Help Centre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="logo">
+      <span class="logo-text">DWCE</span>
+      <span class="logo-sub">Help Centre</span>
+    </a>
+  </div>
+</header>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<nav class="sidebar" id="sidebar">
+  <div class="nav-label">Phase 1 — Workers</div>
+  <a href="getting-started.html" class="nav-link">Getting Started</a>
+  <a href="login.html"           class="nav-link">Login &amp; Password</a>
+  <a href="clocking.html"        class="nav-link">Clocking In &amp; Out</a>
+  <a href="messages.html"        class="nav-link">Messages</a>
+  <a href="timesheets.html"      class="nav-link">Timesheets</a>
+  <a href="plant-checks.html"    class="nav-link">Plant Checks</a>
+  <a href="deliveries.html"      class="nav-link">Deliveries</a>
+  <a href="dashboard.html"       class="nav-link">Dashboard</a>
+</nav>
+
+<main class="content">
+  <div class="content-inner">
+
+    <div class="breadcrumb"><a href="index.html">Home</a><span>Dashboard</span></div>
+    <h1>Dashboard</h1>
+    <p class="page-intro">The Dashboard gives you a personalised at-a-glance view of your clocking status, timesheets, and team activity. You can choose which information cards appear and in what order.</p>
+
+    <div class="toc">
+      <div class="toc-title">On this page</div>
+      <ul>
+        <li><a href="#overview">What the Dashboard Shows</a></li>
+        <li><a href="#widgets">Customising Your Widgets</a></li>
+        <li><a href="#preferences">Dashboard Preferences</a></li>
+      </ul>
+    </div>
+
+    <!-- ── OVERVIEW ─────────────────────────────────────────────────── -->
+    <h2 id="overview">What the Dashboard Shows</h2>
+
+    <p>
+      The Dashboard is made up of <strong>cards</strong> (also called widgets), grouped into
+      categories. Each card shows a specific piece of information — for example, your current
+      clock-in status, this week's hours, or a list of recent timesheets.
+    </p>
+
+    <p>The categories and cards available to you depend on your role. Common categories include:</p>
+
+    <table style="width:100%;border-collapse:collapse;margin-bottom:1rem;">
+      <thead>
+        <tr style="background:#f1f5f9;text-align:left;">
+          <th style="padding:8px 12px;border:1px solid #e2e8f0;">Category</th>
+          <th style="padding:8px 12px;border:1px solid #e2e8f0;">Cards included</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>My Clocking</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">Clock Status, My Clocking History</td>
+        </tr>
+        <tr style="background:#f8fafc;">
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>My Time Periods</strong></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">My Weekly Hours, Recent Timesheets</td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Team Clocking</strong> <span style="font-size:.8rem;color:#64748b;">(managers)</span></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">Project Team Clock-In, Not Clocked In, Forgotten Clock-Outs</td>
+        </tr>
+        <tr style="background:#f8fafc;">
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Team Time Periods</strong> <span style="font-size:.8rem;color:#64748b;">(managers)</span></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">Team This Week, Timesheet Completion</td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Work Orders</strong> <span style="font-size:.8rem;color:#64748b;">(workshop)</span></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">My Work Orders, Open Work Orders, WO Status Counts</td>
+        </tr>
+        <tr style="background:#f8fafc;">
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;"><strong>Plant Checks</strong> <span style="font-size:.8rem;color:#64748b;">(plant checks role)</span></td>
+          <td style="padding:8px 12px;border:1px solid #e2e8f0;">Plant Checks Today</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="info">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Categories are turned on and off by an administrator based on your role. If a category you expect is missing, contact the office.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── CUSTOMISING WIDGETS ───────────────────────────────────────── -->
+    <h2 id="widgets">Customising Your Widgets</h2>
+
+    <p>
+      Within each category you can choose which cards appear and control the order they are
+      displayed. Open the widget configuration screen by tapping the <strong>gear icon</strong>
+      (⚙️) in the top-right corner of the Dashboard screen.
+    </p>
+
+    <h3>Turning a card on or off</h3>
+    <ol class="steps">
+      <li>Tap the gear icon on the Dashboard to open <strong>My Dashboard Widgets</strong>.</li>
+      <li>Your enabled categories are listed as expandable sections. Tap a section heading to expand it.</li>
+      <li>Each card in the section has a toggle switch on the right. Switch it <strong>on</strong> to show the card on your dashboard, or <strong>off</strong> to hide it.</li>
+      <li>Tap <span class="btn-label">Save</span> at the bottom of the screen to apply your changes.</li>
+    </ol>
+
+    <h3>Reordering cards within a category</h3>
+    <ol class="steps">
+      <li>In the <strong>My Dashboard Widgets</strong> screen, expand the category you want to rearrange.</li>
+      <li>Tap and hold the <strong>drag handle</strong> (≡ icon) on the right of a card row.</li>
+      <li>Drag the row up or down to the position you want.</li>
+      <li>Tap <span class="btn-label">Save</span> to apply the new order.</li>
+    </ol>
+
+    <div class="tip">
+      <span class="callout-icon">✅</span>
+      <div class="callout-body">
+        <p>Cards within a category are ordered independently of other categories. You can have the most important card at the top of each section.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── PREFERENCES ───────────────────────────────────────────────── -->
+    <h2 id="preferences">Dashboard Preferences</h2>
+
+    <p>
+      Dashboard Preferences let you control which project and which team members appear in the
+      <strong>Team</strong> category cards. Access preferences from the Dashboard settings menu.
+    </p>
+
+    <h3>Project</h3>
+    <p>
+      Team cards can be filtered to show only the people working on a specific project. The app
+      will try to <strong>auto-detect your project</strong> from today's clock-in record and
+      display it at the top of the screen.
+    </p>
+    <p>
+      If you need to view a different project, use the <strong>Project (manual override)</strong>
+      dropdown to select any active project. This overrides the auto-detected value until you
+      change it again.
+    </p>
+
+    <h3>Project Prefix Filter</h3>
+    <p>
+      If your company uses project numbers with different letter prefixes (for example, "A" for
+      civil works and "B" for groundworks), you can filter the team cards to show only users
+      whose project number starts with the selected letter(s).
+    </p>
+    <ol class="steps">
+      <li>In Dashboard Preferences, find the <strong>Project Prefix Filter</strong> section.</li>
+      <li>Tap one or more letter chips to select them. Selected chips are highlighted.</li>
+      <li>Team cards will only show users whose current project number begins with the selected letter(s).</li>
+      <li>Leave all chips unselected to show users from all projects.</li>
+      <li>Tap <span class="btn-label">Save Preferences</span> to apply.</li>
+    </ol>
+
+    <h3>Role Filter</h3>
+    <p>
+      You can narrow team cards down to specific employee roles — for example, to see only
+      Operatives or only Supervisors.
+    </p>
+    <ol class="steps">
+      <li>In Dashboard Preferences, find the <strong>Role Filter</strong> section.</li>
+      <li>Tap the roles you want to include. Selected roles are highlighted.</li>
+      <li>Leave all roles unselected to show all roles.</li>
+      <li>Tap <span class="btn-label">Save Preferences</span> to apply.</li>
+    </ol>
+
+    <div class="info">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Project Prefix Filter and Role Filter only affect the Team Clocking and Team Time Periods cards. Your own clocking and timesheet cards are not affected.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  &copy; 2025 DWCE. All rights reserved.
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>
