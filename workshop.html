@@ -117,10 +117,10 @@
     <h3>Starting an inspection</h3>
     <ol class="steps">
       <li>Tap <strong>Workshop → Inspection Report</strong>.</li>
-      <li>Select an <strong>Inspection Config</strong> from the dropdown (e.g. "Road Vehicle — Full" or "Large Plant — Daily").</li>
-      <li>Select the <strong>plant item</strong> you are inspecting from the second dropdown.</li>
-      <li>If the config requires a clock reading, enter the current reading.</li>
-      <li>Tap <span class="btn-label">Start Inspection</span>.</li>
+      <li>Select the <strong>plant item</strong> you are inspecting from the "Select Plant" dropdown.</li>
+      <li>Select an <strong>Inspection Template</strong> from the "Select Inspection Template" dropdown (e.g. "Road Vehicle — Full" or "Large Plant — Daily").</li>
+      <li>Tap <span class="btn-label">Start Inspection</span>. If the template requires a clock reading, a dialog prompts you for it at this point.</li>
+      <li>If there are previously reported <strong>Monitor</strong> items still unresolved for this plant, a popup lists them — these will auto-resolve if the same questions are answered Pass during this inspection.</li>
     </ol>
 
     <h3>Completing inspection questions</h3>
@@ -129,7 +129,7 @@
       answer types:
     </p>
     <ul>
-      <li><strong>Check</strong> — Pass / Fault / Monitor (tap to select).</li>
+      <li><strong>Check</strong> — Pass / Monitor / Fault (tap to select).</li>
       <li><strong>Text</strong> — Type a free-text answer.</li>
       <li><strong>Numeric / Percentage</strong> — Enter a measured value.</li>
       <li><strong>List</strong> — Select from a predefined list of options.</li>
@@ -150,8 +150,9 @@
     <h3>Submitting</h3>
     <p>
       When all questions are answered, tap <span class="btn-label">Submit</span>. The report is
-      saved and any questions marked as <em>Fault</em> or <em>Monitor</em> are automatically
-      available to be linked to a Work Order.
+      saved with any questions marked as <em>Fault</em> or <em>Monitor</em> recorded against the
+      plant — linking them to a Work Order is a separate step, done from the Inspection Log (see
+      below).
     </p>
 
     <hr class="section-divider">
@@ -165,7 +166,17 @@
       follow up on flagged faults.
     </p>
 
-    <p>You can filter the log by plant, date range, and inspection config. Tap any row to view the full report including individual question responses and any photos attached.</p>
+    <p>You can filter the log by plant, date range, and inspection config, and toggle between "Show All" and "Faults &amp; Monitors" only. Tap any row to view the full report including individual question responses and any photos attached.</p>
+
+    <h3>Turning a fault or monitor into a Work Order</h3>
+    <p>
+      Faults and monitors are <strong>not</strong> automatically linked to a Work Order when the
+      inspection is submitted — you link them from the Inspection Log:
+    </p>
+    <ul>
+      <li>Tap the <span class="btn-label">WO</span> button on an individual fault/monitor row to create or attach it to a Work Order for that plant.</li>
+      <li>Or use the checkboxes to select several faults/monitors at once, then use the action bar at the bottom of the screen to <span class="btn-label">Create Work Order</span> (new or attach to an existing open WO for that plant) or <span class="btn-label">Monitor</span> (batch-downgrade a fault to a monitor item).</li>
+    </ul>
 
     <hr class="section-divider">
 
@@ -208,6 +219,7 @@
       <strong>Scheduled</strong> date, and counts of linked <strong>Faults</strong> and
       <strong>Tasks</strong>.
     </p>
+    <p>The WO detail screen's status bar can also show a fifth priority level, <strong>Critical</strong>, above Urgent.</p>
 
     <h3>Filtering the list</h3>
     <ul>
@@ -219,9 +231,10 @@
     <h3>Creating a Work Order</h3>
     <ol class="steps">
       <li>Tap <span class="btn-label">+ New WO</span> (bottom-right of the screen).</li>
-      <li>Enter a title, select the plant, set the priority and optionally a scheduled date.</li>
+      <li>Enter a title, select the plant (use the <strong>Filter Plant</strong> search box to narrow the dropdown if needed), set the priority and optionally a scheduled date.</li>
+      <li>If the job has no associated plant (workshop fabrication work), switch on <strong>Fabrication Job</strong> — this hides the plant picker so you can create the WO without linking it to a vehicle.</li>
       <li>Optionally choose a <strong>WO Template</strong> — this pre-fills a standard task checklist.</li>
-      <li>Tap <span class="btn-label">Save</span>.</li>
+      <li>Tap <span class="btn-label">Create</span>.</li>
     </ol>
 
     <hr class="section-divider">
@@ -334,14 +347,36 @@
     </ul>
 
     <p>
-      The list is sorted with the most urgent items at the top. Tap any row to view the full
-      service history for that vehicle, or to record a new service.
+      The list is sorted with the most urgent items at the top. Use the filter chips
+      (All / Overdue / Due Soon / OK / CVRT) or the search box to narrow the list. Tap any row to
+      view the full service history for that vehicle.
+    </p>
+
+    <h3>Recording a service</h3>
+    <p>
+      Tap <span class="btn-label">Record Service</span> to log a completed service — choose the
+      service type (Routine / Minor / Major / CVRT / Repair / Other), enter the date and clock
+      reading, note whether it was done externally/by a dealer, and who completed it.
+    </p>
+
+    <h3>Adding a vehicle to the register</h3>
+    <p>
+      Tap <span class="btn-label">Add to Register</span> to add a new vehicle, setting its
+      vehicle type, registration, and CVRT due date.
+    </p>
+
+    <h3>Editing a vehicle's config</h3>
+    <p>
+      Open a vehicle and tap the <strong>edit</strong> (pencil) icon to change its vehicle type,
+      registration, or CVRT due date, and to set <strong>per-vehicle service interval
+      overrides</strong> (months / km / hours / due-soon thresholds) directly from this screen —
+      you don't need Workshop Admin access to override intervals for an individual vehicle.
     </p>
 
     <div class="info">
       <span class="callout-icon">ℹ️</span>
       <div class="callout-body">
-        <p>Service intervals (how many months, km, or hours between services) are configured in <strong>Workshop Admin → Service Intervals</strong>. If a vehicle shows an incorrect status, check the interval configuration with your Workshop Manager.</p>
+        <p>Default service intervals for each vehicle type are configured in <strong>Workshop Admin → Service Intervals</strong>. If a vehicle shows an unexpected status and you can't see why, check whether a per-vehicle override has been set here before contacting your Workshop Manager.</p>
       </div>
     </div>
 

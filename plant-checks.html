@@ -113,16 +113,16 @@
     </p>
 
     <ol class="steps">
-      <li><strong>Intro</strong> — a brief overview of the setup process is shown. Tap <span class="btn-label">Start Setup</span> to begin.</li>
+      <li><strong>Intro</strong> — a brief overview of the setup process is shown. Tap <span class="btn-label">Continue →</span> to begin.</li>
       <li><strong>Clock / Odometer</strong> — confirm whether this machine has a clock, hour-meter, or odometer. If yes, select the unit (Hours, Kilometres, or Miles).</li>
-      <li><strong>Questions</strong> — work through the inspection questions one by one. For each question, tap:
+      <li><strong>Questions</strong> — work through the inspection questions one by one. Answering a question automatically advances you to the next one (use <span class="btn-label">← Back</span> to go back). For each question, tap:
         <ul>
           <li><span class="btn-label" style="background:#059669;">Pass</span> — the item is applicable and currently in good condition</li>
           <li><span class="btn-label" style="background:#dc2626;">Fault</span> — the item is applicable but has a defect (you will be asked to describe it)</li>
           <li><span class="btn-label">N/A</span> — the question does not apply to this machine (it will be hidden in all future checks for this machine)</li>
         </ul>
       </li>
-      <li><strong>Review</strong> — confirm the setup summary and tap <span class="btn-label">Save Configuration</span>.</li>
+      <li><strong>Review</strong> — confirm the setup summary and tap <span class="btn-label">Save &amp; Submit ✓</span>.</li>
     </ol>
 
     <p>
@@ -150,17 +150,17 @@
       <li>Select the machine (see <a href="#large-plant-select">Selecting a Machine</a> above).</li>
       <li>The <strong>Details</strong> screen appears. Confirm the date and, if the machine has a clock, enter the current reading.
         <ul>
-          <li>If a reading was recorded within the past 7 days, the app will pre-fill the field with that value as a starting point — update it to the current reading before continuing.</li>
+          <li>If a reading was recorded earlier in the same week, the app will pre-fill the field with that value as a starting point — update it to the current reading before continuing.</li>
         </ul>
       </li>
-      <li>Work through the checklist items one by one. For each item, tap:
+      <li>Work through the checklist items one by one — answering a question automatically advances to the next. For each item, tap:
         <ul>
           <li><span class="btn-label" style="background:#059669;">Pass</span> — item is in good condition</li>
           <li><span class="btn-label" style="background:#dc2626;">Fault</span> — item has a defect (describe it and optionally add a photo)</li>
         </ul>
       </li>
       <li>Only the questions marked as applicable during setup are shown — N/A questions are hidden.</li>
-      <li>Once all items are answered, tap <span class="btn-label">Submit Check</span>.</li>
+      <li>Once all items are answered, tap <span class="btn-label">Submit ✓</span>.</li>
     </ol>
 
     <div class="warning">
@@ -192,8 +192,8 @@
       <li>Enter a <strong>description</strong> of the fault — be as specific as possible.</li>
       <li>To add a photo, tap <span class="btn-label">Add Photo</span>:
         <ul>
-          <li>Choose <strong>Take Photo</strong> to use your camera directly</li>
-          <li>Or choose <strong>Choose from Gallery</strong> to use an existing photo</li>
+          <li>Choose <strong>Camera</strong> to take a photo directly</li>
+          <li>Or choose <strong>Gallery</strong> to use an existing photo</li>
         </ul>
       </li>
       <li>Tap <span class="btn-label">Next</span> to continue to the next checklist item.</li>
@@ -225,8 +225,9 @@
 
     <p>
       Small plant refers to hand tools, power tools, and smaller equipment — generators, compactors,
-      vibrators, breakers, and similar items. Asset checks are carried out by location and confirm
-      that equipment at that location is present and in acceptable condition.
+      vibrators, breakers, and similar items. Each item is tagged with an NFC sticker (format
+      <code>SP1234</code>). Asset checks work by scanning the items you have with you into a
+      session, rather than ticking off a fixed checklist.
     </p>
 
     <hr class="section-divider">
@@ -235,29 +236,30 @@
     <h3 id="asset-check">a. Asset Check for a Location</h3>
 
     <p>
-      An asset check is a location-based inspection. You select the site or storage area, and
-      the app displays all items that should be present at that location.
+      An asset check records which small plant items are present at a stock location (e.g. a
+      van or site compound) by scanning each one in.
     </p>
 
     <ol class="steps">
       <li>From the main menu, tap <strong>Plant Checks → Small Plant</strong>.</li>
-      <li>Tap <span class="btn-label">New Asset Check</span>.</li>
-      <li>Select the <strong>location</strong> you are checking from the dropdown list (e.g. a specific site, compound, or storage area).</li>
-      <li>The app will display the list of items assigned to that location.</li>
-      <li>For each item, indicate its status:
-        <ul>
-          <li><strong>Present &amp; OK</strong> — item is on site and in good condition</li>
-          <li><strong>Present — Fault</strong> — item is on site but has a defect (you will be prompted to record the fault — see below)</li>
-          <li><strong>Not Present</strong> — item is missing from the location</li>
-        </ul>
-      </li>
-      <li>Once all items are reviewed, tap <span class="btn-label">Submit Check</span>.</li>
+      <li>Select your <strong>Stock Location</strong> from the dropdown (e.g. your van). If you check the same location regularly, tap <span class="btn-label">Save as my Stock Location</span> so it's remembered next time.</li>
+      <li>Tap <span class="btn-label">Start Scan</span> to enter scanning mode.</li>
+      <li>Hold your phone near each item's NFC tag. Each successful scan adds the item to the list on screen, with feedback confirming the scan. If NFC isn't available or a tag can't be read, tap <span class="btn-label">Manual Entry</span> to add an item by its plant number instead.</li>
+      <li>Repeat until you have scanned everything at the location, then tap <span class="btn-label">Stop Scan</span>.</li>
+      <li>Review the scanned list and tap <span class="btn-label">Submit Scan Session</span>.</li>
     </ol>
+
+    <div class="info">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Only items you actually scan are recorded — there is no pre-set checklist of expected items, so an item that isn't scanned simply won't appear in the session. Make sure you scan everything that should be at the location.</p>
+      </div>
+    </div>
 
     <div class="tip">
       <span class="callout-icon">✅</span>
       <div class="callout-body">
-        <p>Walk the location with your phone and physically check each item as you go rather than filling the form in from memory.</p>
+        <p>Walk the location with your phone and scan each item as you go rather than trying to do it from memory.</p>
       </div>
     </div>
 
@@ -267,17 +269,14 @@
     <h3 id="small-plant-fault">b. Recording a Fault &amp; Adding a Photo</h3>
 
     <p>
-      When you identify a fault on a small plant item during an asset check — or at any time —
-      you can submit a fault report directly.
+      Faults are reported per item, after it has been scanned into the current session.
     </p>
 
     <ol class="steps">
-      <li>From the Small Plant screen, tap <span class="btn-label">Report Fault</span>, or when completing an asset check, select <strong>Present — Fault</strong> on the relevant item.</li>
-      <li>Select the <strong>equipment item</strong> with the fault (if not already selected).</li>
-      <li>Select the <strong>fault type</strong> from the list.</li>
+      <li>After scanning an item, tap the <strong>Report Fault</strong> icon next to it in the scanned list.</li>
       <li>Enter a clear <strong>description</strong> of the fault.</li>
-      <li>Tap <span class="btn-label">Add Photo</span> to take a photo or choose one from your gallery. A photo is strongly recommended.</li>
-      <li>Tap <span class="btn-label">Submit</span> to send the fault report.</li>
+      <li>Tap <span class="btn-label">Camera</span> to take a photo, or <span class="btn-label">Gallery</span> to use an existing one. A photo is strongly recommended.</li>
+      <li>Confirm to attach the fault to that item — it will be included when you submit the scan session.</li>
     </ol>
 
     <div class="warning">
@@ -300,22 +299,14 @@
 
     <ol class="steps">
       <li>From the main menu, tap <strong>Plant Checks → My Checks</strong>.</li>
-      <li>A list of your submitted checks appears, ordered by date — most recent first.</li>
-      <li>Tap any entry to view the full details of that check, including each checklist item result and any fault notes.</li>
+      <li>Your checks are grouped into <strong>weekly</strong> cards — tap a week to expand it.</li>
+      <li>Each week shows a count of checks submitted, split between Small Plant and Large Plant.</li>
     </ol>
-
-    <h3>What the summary shows</h3>
-    <ul>
-      <li><strong>Date and time</strong> the check was submitted</li>
-      <li><strong>Machine or location</strong> checked</li>
-      <li><strong>Overall result</strong> — all passed, or number of items failed</li>
-      <li>Individual item results and any fault descriptions or photos</li>
-    </ul>
 
     <div class="info">
       <span class="callout-icon">ℹ️</span>
       <div class="callout-body">
-        <p>My Checks is a read-only record. Submitted checks cannot be edited. If you submitted a check with an error, notify your supervisor.</p>
+        <p>My Checks is a summary record — it groups checks by week and shows counts rather than full item-by-item detail. Submitted checks cannot be edited. If you submitted a check with an error, notify your supervisor.</p>
       </div>
     </div>
 

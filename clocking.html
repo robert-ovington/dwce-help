@@ -41,18 +41,18 @@
 
     <div class="breadcrumb"><a href="index.html">Home</a><span>Clocking In &amp; Out</span></div>
     <h1>Clocking In &amp; Out</h1>
-    <p class="page-intro">Use the Clocking screen to record when you arrive at and leave a work site. Your location is captured at the time of clocking to confirm site attendance.</p>
+    <p class="page-intro">Use the Clock In / Clock Out button to record when you arrive at and leave a work site. Your location is captured at the time of clocking to confirm site attendance.</p>
 
     <div class="toc">
       <div class="toc-title">On this page</div>
       <ul>
         <li><a href="#clock-in">Clocking In</a></li>
         <li><a href="#clock-out">Clocking Out</a></li>
+        <li><a href="#breaks">Recording a Break</a></li>
         <li><a href="#project-selection">Selecting a Project</a></li>
         <li><a href="#adjusting-time">Adjusting the Clock Time</a></li>
         <li><a href="#vehicle-selection">Vehicle Selection</a></li>
-        <li><a href="#clock-history">Viewing Your Clock History</a></li>
-        <li><a href="#office-clock">Clocking In at the Office</a></li>
+        <li><a href="#clock-history">My Clockings</a></li>
         <li><a href="#location-required">Location Permission Required</a></li>
         <li><a href="#missed-clocking">Missed a Clocking</a></li>
       </ul>
@@ -64,17 +64,17 @@
     <p>Clock in as soon as you arrive on site at the start of your working day or shift.</p>
 
     <ol class="steps">
-      <li>From the main menu, tap <strong>Clock In / Out</strong>.</li>
-      <li>The screen will display your current status — if you are not yet clocked in it will show <strong>Not Clocked In</strong>.</li>
+      <li>At the top of the <strong>Main Menu</strong>, tap the large <span class="btn-label">Clock In</span> card. This opens the clock-in pop-down over the menu — you do not navigate to a separate screen.</li>
       <li>The app will read your current GPS location. Ensure you are on or near the work site before proceeding.</li>
-      <li>Tap the <span class="btn-label">Clock In</span> button.</li>
-      <li>A confirmation message will appear showing the time your clock-in was recorded.</li>
+      <li>Select the project you are working on (see <a href="#project-selection">Selecting a Project</a> below).</li>
+      <li>Tap the <span class="btn-label">Clock In</span> button. A confirmation dialog appears summarising the project, client, time, and distance from the job — check the details and tap the coloured confirm button to finish, or <span class="btn-label">Cancel</span> to go back.</li>
+      <li>A brief "Clocked in successfully!" message appears at the bottom of the screen once confirmed.</li>
     </ol>
 
     <div class="tip">
       <span class="callout-icon">✅</span>
       <div class="callout-body">
-        <p>Clock in <strong>before</strong> you start any work, not at the end of the day. The time recorded is the exact moment you tap the button.</p>
+        <p>Clock in <strong>before</strong> you start any work, not at the end of the day. The time recorded is the exact moment you tap the button (unless you have adjusted it — see <a href="#adjusting-time">Adjusting the Clock Time</a>).</p>
       </div>
     </div>
 
@@ -86,11 +86,10 @@
     <p>Clock out when you are about to leave the site at the end of your working day or shift.</p>
 
     <ol class="steps">
-      <li>From the main menu, tap <strong>Clock In / Out</strong>.</li>
-      <li>The screen will show your current status — if you are clocked in it will show your clock-in time and a <span class="btn-label">Clock Out</span> button.</li>
+      <li>At the top of the <strong>Main Menu</strong>, tap the <span class="btn-label">Clock Out</span> card (it replaces the Clock In card once you are clocked in) to open the same pop-down.</li>
       <li>Make sure you are still on site before tapping.</li>
-      <li>Tap <span class="btn-label">Clock Out</span>.</li>
-      <li>A confirmation message will appear showing your clock-out time. Your total hours for that attendance record will be displayed.</li>
+      <li>Tap <span class="btn-label">Clock Out</span>. A confirmation dialog appears with the same summary details — check them and confirm.</li>
+      <li>A brief "Clocked out successfully!" message appears once confirmed.</li>
     </ol>
 
     <div class="warning">
@@ -102,17 +101,29 @@
 
     <hr class="section-divider">
 
+    <!-- ── BREAKS ────────────────────────────────────────────────────── -->
+    <h2 id="breaks">Recording a Break</h2>
+
+    <p>
+      If breaks are enabled for your account, a <strong>Breaks</strong> section appears in the
+      clock-in pop-down. Tap <span class="btn-label">Add Break</span> to log a start and finish
+      time for an unpaid break taken during the day. Any breaks you have added are shown in the
+      confirmation dialog when you clock in or out.
+    </p>
+
+    <hr class="section-divider">
+
     <!-- ── PROJECT SELECTION ────────────────────────────────────────── -->
     <h2 id="project-selection">Selecting a Project</h2>
 
-    <p>You can record which project or job you are clocking in for. The clocking screen provides three ways to choose a project:</p>
+    <p>You can record which project or job you are clocking in for. The clock-in pop-down provides two shortcuts to choose a project, plus manual search:</p>
 
     <dl>
-      <dt><strong>Find Nearest Job</strong></dt>
-      <dd>Uses your current GPS location to find the closest active project. Tap the button and the app will show the nearest match. If there are multiple nearby sites, a <span class="btn-label">Find Next</span> button appears — tap it to cycle through the next closest options.</dd>
+      <dt><strong>Find Nearest</strong></dt>
+      <dd>Uses your current GPS location to find the closest active project. Tap the button and the app will show the nearest match. If there are multiple nearby sites, the button label changes so you can tap it again to cycle through the next closest options.</dd>
 
-      <dt><strong>Find Last Job</strong></dt>
-      <dd>Opens a list of the last 10 projects you have worked on. Tap any entry to fill in the project field instantly without searching.</dd>
+      <dt><strong>Find Last</strong></dt>
+      <dd>Opens a list of recent projects you have worked on. Tap any entry to fill in the project field instantly without searching.</dd>
 
       <dt><strong>Type to search</strong></dt>
       <dd>Tap the project field and start typing part of the project name. Matching results will appear as you type.</dd>
@@ -142,46 +153,30 @@
     <h2 id="vehicle-selection">Vehicle Selection</h2>
 
     <p>
-      If your role requires you to record which vehicle you are using, a <strong>vehicle selector</strong>
-      will appear on the clocking screen. Your saved fleet vehicles (up to six) will be listed
-      as quick-select buttons. Tap the one you are driving before clocking in.
+      If your role records vehicle usage, a <strong>Vehicles</strong> section appears in the
+      clock-in pop-down showing your saved fleet vehicles (up to six, set up by the office).
+      These are listed automatically — there is nothing to select. If a listed vehicle is wrong,
+      tap the <strong>delete</strong> (bin) icon next to it to remove it from this clock-in. You
+      can also add a vehicle manually if it is not in your saved list.
     </p>
 
     <div class="info">
       <span class="callout-icon">ℹ️</span>
       <div class="callout-body">
-        <p>The vehicle selector only appears if it has been enabled for your account. If it is not visible and you think it should be, contact the office.</p>
+        <p>The Vehicles section only appears if it has been enabled for your account. If it is not visible and you think it should be, contact the office.</p>
       </div>
     </div>
 
     <hr class="section-divider">
 
     <!-- ── CLOCK HISTORY ─────────────────────────────────────────────── -->
-    <h2 id="clock-history">Viewing Your Clock History</h2>
+    <h2 id="clock-history">My Clockings</h2>
 
     <p>
-      At the bottom of the clocking screen there is a summary table showing your clock-in and
-      clock-out records for the currently selected date. This lets you quickly confirm what has
-      already been recorded without leaving the screen.
+      <strong>My Clockings</strong> shows a read-only history of your clock-in and clock-out
+      records grouped by date, with your total hours for each day. Use it to confirm a clocking
+      was recorded correctly.
     </p>
-
-    <hr class="section-divider">
-
-    <!-- ── OFFICE CLOCK ───────────────────────────────────────────── -->
-    <h2 id="office-clock">Clocking In at the Office</h2>
-
-    <p>
-      If you are based at the office rather than on a construction site, there is a separate
-      <strong>Office Clock In / Out</strong> screen. The process is identical to site clocking —
-      tap Clock In when you arrive and Clock Out when you leave.
-    </p>
-
-    <div class="info">
-      <span class="callout-icon">ℹ️</span>
-      <div class="callout-body">
-        <p>The Office clock-in screen may only appear in your menu if your role is set up for office attendance. If you cannot see it and think you should, contact the office.</p>
-      </div>
-    </div>
 
     <hr class="section-divider">
 

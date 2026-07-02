@@ -60,6 +60,7 @@
         <li><a href="#reset-to-today">Returning to Today's Date</a></li>
         <li><a href="#my-timesheet">My Timesheet — Viewing, Editing &amp; Deleting</a></li>
         <li><a href="#my-hours">My Hours</a></li>
+        <li><a href="#time-off">Time Off</a></li>
       </ul>
     </div>
 
@@ -76,10 +77,9 @@
     </p>
 
     <ol class="steps">
-      <li>From the main menu, tap <strong>Timesheets</strong>.</li>
-      <li>Tap the <span class="btn-label">+ Add Time Period</span> button.</li>
+      <li>From the main menu, tap <strong>Timesheets → New Entry</strong>. This opens the time period form directly.</li>
       <li>Work through each section of the form (described below).</li>
-      <li>When all required fields are complete, tap <span class="btn-label">Save</span> to review the submission popup and confirm.</li>
+      <li>When all required fields are complete, tap <span class="btn-label">Upload Time Period</span> to review the confirmation popup and confirm.</li>
     </ol>
 
     <hr class="section-divider">
@@ -166,9 +166,11 @@
 
     <h4>Find Last Job</h4>
     <p>
-      Tap <span class="btn-label">Find Last Job</span> to open a list of the last projects you
-      have worked on. Tap any entry to fill in the project field instantly. Use this when you are
-      returning to a familiar job and want to avoid searching.
+      Tap <span class="btn-label">Find Last Job</span> to review your recent projects one at a
+      time — the dialog shows "Last Job N of M" along with the project, date last used, client
+      name, and description of work. Use <span class="btn-label">Previous</span> or
+      <span class="btn-label">Skip</span> to move to another recent job, or tap
+      <span class="btn-label">Select</span> to fill in the project field with the one shown.
     </p>
 
     <div class="tip">
@@ -185,33 +187,35 @@
 
     <p>
       In addition to your primary project or fleet allocation, you can record any specific
-      vehicles or equipment you operated or used during this time period.
+      vehicles or equipment you operated or used during this time period. The section is split
+      into two lists: <strong>Used Fleet</strong> and <strong>Mobilised Fleet &amp; Equipment</strong>.
     </p>
 
     <h4>Adding equipment</h4>
-    <ol class="steps">
-      <li>In the Fleet &amp; Equipment section, tap <span class="btn-label">+ Add</span>.</li>
-      <li>Select the equipment from the list, or use the search bar to find it.</li>
-      <li>The item will be added to your time period.</li>
-    </ol>
-
-    <h4>Adding multiple items</h4>
     <p>
-      You can add more than one piece of equipment. Repeat the steps above for each item you
-      used during this time period.
+      Use the numbered search fields (e.g. "Mobilised 1", "Mobilised 2") to add items to the
+      Used Fleet or Mobilised Fleet &amp; Equipment lists — type part of the name to search and
+      select a match.
     </p>
 
-    <h4>Removing an item</h4>
+    <h4>Saving and reusing a fleet selection</h4>
+    <p>If you regularly use the same set of vehicles or equipment, three buttons help you avoid re-entering them each time:</p>
+    <ul>
+      <li><span class="btn-label">Save Fleet</span> — stores your current selection for reuse</li>
+      <li><span class="btn-label">Recall Fleet</span> — loads your previously saved selection back into the form</li>
+      <li><span class="btn-label">Clear Fleet</span> — empties the current selection</li>
+    </ul>
     <p>
-      To remove an equipment item you have added by mistake, tap the <strong>remove</strong>
-      (×) icon next to the item in the list.
+      Enable <strong>Auto Load Saved Fleet</strong> to have your saved selection load automatically
+      on future time periods without needing to tap Recall Fleet each time.
     </p>
 
-    <h4>Saving your fleet selection</h4>
+    <h4>Saving your fleet selection with the time period</h4>
     <p>
-      Your equipment selection is saved as part of the time period when you tap the main
-      <span class="btn-label">Save</span> button at the end of the form. There is no need to
-      save this section separately.
+      Your fleet and equipment selection is saved as part of the time period when you tap the
+      main <span class="btn-label">Upload Time Period</span> button at the end of the form. There
+      is no need to save this section separately (Save Fleet is only for reusing the selection
+      on future entries).
     </p>
 
     <hr class="section-divider">
@@ -220,38 +224,30 @@
     <h3 id="allowances">d. Allowances</h3>
 
     <p>
-      Allowances are additional payments beyond your basic hourly rate. The app provides two
-      types: <strong>Miscellaneous</strong> and <strong>Travel</strong>.
+      Allowances are additional payments beyond your basic hourly rate. This section covers
+      <strong>MISC</strong> time and <strong>Travel</strong> time.
     </p>
 
-    <h4>Miscellaneous Allowances</h4>
+    <h4>MISC</h4>
     <p>
-      Miscellaneous allowances cover site-specific entitlements such as a site allowance, meal
-      allowance, or other agreed payments. The allowances available to you are pre-configured
-      by the office based on the project or site you are working on.
+      Use the MISC stepper to record miscellaneous time not directly worked (e.g. a site
+      allowance period). Tap <span class="btn-label">−</span> / <span class="btn-label">+</span>
+      to adjust the value in 30-minute increments, or use the dropdown to pick a value directly.
     </p>
-    <ul>
-      <li>Tap the <strong>Miscellaneous Allowances</strong> section to expand it</li>
-      <li>Enable the allowances that apply to your work on this day</li>
-      <li>The value of each allowance is set by the office — you select whether it applies, not the amount</li>
-    </ul>
 
-    <h4>Travel Allowance</h4>
+    <h4>Travel</h4>
     <p>
-      Travel allowance compensates you for travelling to a site. The calculation is based on
-      rules configured by the office (for example, a rate per mile or a flat daily rate
-      depending on distance).
+      Enter travel time using the <strong>Travel To Site</strong> and <strong>Travel From Site</strong>
+      minute dropdowns. If you're not sure of the correct amount, tap
+      <span class="btn-label">Check Travel</span> — the app uses GPS to work out a Travel Summary
+      (total travel time, available allowance, rounded one-way/two-way time, and total distance)
+      that you can use to fill in the fields accurately.
     </p>
-    <ul>
-      <li>Enable the <strong>Travel Allowance</strong> toggle if it applies to this time period</li>
-      <li>The app will calculate the allowance amount based on the project location and your configured rate</li>
-      <li>The calculated amount will be shown for your reference before you save</li>
-    </ul>
 
     <div class="info">
       <span class="callout-icon">ℹ️</span>
       <div class="callout-body">
-        <p>If you believe an allowance is showing the wrong amount, or an allowance you are entitled to is not listed, contact the office — allowance configuration is managed by administration.</p>
+        <p>If you're unsure what MISC or Travel time to record, or believe the Check Travel result is wrong, contact the office — allowance rules are managed by administration.</p>
       </div>
     </div>
 
@@ -262,8 +258,7 @@
 
     <p>
       The Materials section is only visible to drivers of the concrete mixing lorry. It allows
-      you to record the materials loaded and delivered during this time period as part of your
-      work record.
+      you to record a concrete load as part of your work record.
     </p>
 
     <div class="note">
@@ -274,13 +269,13 @@
     </div>
 
     <h4>Recording materials</h4>
-    <ol class="steps">
-      <li>Tap <span class="btn-label">+ Add Material</span>.</li>
-      <li>Select the material type from the list.</li>
-      <li>Enter the quantity.</li>
-      <li>Tap <span class="btn-label">Add</span> to save the entry.</li>
-      <li>Repeat for each material loaded during this time period.</li>
-    </ol>
+    <p>Fill in the three fields in the Materials section:</p>
+    <ul>
+      <li><strong>Ticket Number</strong> — the docket/ticket number for the load</li>
+      <li><strong>Concrete Mix</strong> — select the mix type from the dropdown</li>
+      <li><strong>Quantity</strong> — enter the amount loaded</li>
+    </ul>
+    <p>This section covers a single load — if you deliver multiple loads, record each as a separate time period.</p>
 
     <hr class="section-divider">
 
@@ -315,7 +310,7 @@
 
     <p>
       Before your time period is saved to the system, the app displays a
-      <strong>submission summary popup</strong>. This is your opportunity to check all the
+      <strong>Confirm Time Period Entry</strong> popup. This is your opportunity to check all the
       details are correct before confirming.
     </p>
 
@@ -326,21 +321,21 @@
       <li>Break duration</li>
       <li>Project or fleet item selected</li>
       <li>Equipment items added</li>
-      <li>Allowances applied and their values</li>
+      <li>MISC and Travel time entered</li>
       <li>Materials (if applicable)</li>
       <li>Your comment (if entered)</li>
     </ul>
 
     <h4>Confirming or going back</h4>
     <ul>
-      <li>If everything is correct, tap <span class="btn-label">Confirm &amp; Save</span> to submit the time period</li>
-      <li>If something is wrong, tap <span class="btn-label">Go Back</span> (or close the popup) to return to the form and make corrections</li>
+      <li>If everything is correct, tap <span class="btn-label">OK</span> to submit the time period</li>
+      <li>If something is wrong, tap <span class="btn-label">Cancel</span> to return to the form and make corrections</li>
     </ul>
 
     <div class="warning">
       <span class="callout-icon">⚠️</span>
       <div class="callout-body">
-        <p>Always review the summary carefully. Once saved, a time period can still be edited, but only within a set window of time. After that window closes, corrections require supervisor approval.</p>
+        <p>Always review the summary carefully. Once saved, a time period can still be edited, but only while its status is still "Submitted". Once a supervisor or admin approves it, further corrections must be made by them.</p>
       </div>
     </div>
 
@@ -361,42 +356,40 @@
       <li>Tap any time period to open its full details.</li>
     </ol>
 
-    <h3 id="viewing">Viewing a Time Period</h3>
+    <h3 id="viewing">Time Period Options</h3>
     <p>
-      Tapping a time period opens a read-only summary of everything recorded for that entry —
-      date, hours, project/fleet, equipment, allowances, and comments.
+      Tapping a time period opens a <strong>Time Period Options</strong> popup with three
+      choices: <strong>Edit</strong>, <strong>Delete</strong>, or <strong>Cancel</strong>.
     </p>
 
     <h3 id="editing">Editing a Time Period</h3>
     <p>
-      If you made a mistake on a saved time period, you can edit it while it is still within the
-      editable window (your employer sets this window — typically the same day or within a few days).
+      If you made a mistake on a saved time period, you can edit it as long as its status is
+      still <strong>Submitted</strong> — that is, before a supervisor or admin has approved it.
     </p>
 
     <ol class="steps">
-      <li>Open the time period you want to edit.</li>
-      <li>Tap the <span class="btn-label">Edit</span> button (pencil icon).</li>
+      <li>Tap the time period you want to edit and choose <span class="btn-label">Edit</span> from the popup.</li>
       <li>Make the necessary changes to any field.</li>
-      <li>Tap <span class="btn-label">Save</span> and confirm in the popup.</li>
+      <li>Tap <span class="btn-label">Upload Time Period</span> and confirm in the popup.</li>
     </ol>
 
     <div class="info">
       <span class="callout-icon">ℹ️</span>
       <div class="callout-body">
-        <p>If the Edit button is greyed out or not visible, the editable window for that time period has closed. Contact your supervisor to request an amendment.</p>
+        <p>Once a time period has been approved by a supervisor or admin, editing is blocked and the app tells you who approved it. Contact them to request an amendment.</p>
       </div>
     </div>
 
     <h3 id="deleting">Deleting a Time Period</h3>
     <p>
       If you have added a time period in error (for example, a duplicate entry), you can delete
-      it while it is within the editable window.
+      it while its status is still Submitted.
     </p>
 
     <ol class="steps">
-      <li>Open the time period you want to delete.</li>
-      <li>Tap the <span class="btn-label">Delete</span> button (bin icon).</li>
-      <li>A confirmation prompt will appear — tap <strong>Confirm</strong> to delete permanently.</li>
+      <li>Tap the time period you want to delete and choose <span class="btn-label">Delete</span> from the popup.</li>
+      <li>A confirmation prompt will appear — confirm to delete permanently.</li>
     </ol>
 
     <div class="warning">
@@ -424,9 +417,8 @@
 
     <h3>What My Hours shows</h3>
     <ul>
-      <li><strong>Total hours</strong> submitted for the current period</li>
-      <li>A breakdown of hours by day</li>
-      <li>The status of your submission (submitted / pending supervisor approval)</li>
+      <li>Hours per day for the selected week, plus travel (ET) and MISC (MS) minutes</li>
+      <li>A <strong>total</strong> row for the week</li>
     </ul>
 
     <div class="tip">
@@ -447,6 +439,26 @@
       <span class="btn-label">Reset to Today</span> button will appear next to the date field.
       Tap it to jump back to today's date without opening the date picker again.
     </p>
+
+    <!-- ════════════════════════════════════════════════════════════
+         TIME OFF
+    ═════════════════════════════════════════════════════════════════ -->
+    <hr class="section-divider">
+    <h2 id="time-off">Time Off</h2>
+
+    <p>
+      <strong>Time Off</strong> lets you request leave and see a calendar of your time off and
+      public holidays for the year.
+    </p>
+
+    <ol class="steps">
+      <li>From the main menu, tap <strong>Timesheets → Time Off</strong>.</li>
+      <li>The screen shows your time off requests for the current year, plus a month calendar highlighting time-off days and public holidays.</li>
+      <li>Tap <span class="btn-label">Add Time Off Request</span> to open the request form.</li>
+      <li>Select the <strong>Start Date</strong> and <strong>End Date</strong>, choose the type of leave, and tap <span class="btn-label">Submit</span>.</li>
+    </ol>
+
+    <p>Each request shows a status badge — <strong>Pending</strong>, <strong>Approved</strong>, or <strong>Declined</strong> — as it moves through approval.</p>
 
   </div>
 </main>
