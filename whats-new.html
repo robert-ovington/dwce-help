@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's New | DWCE Help Centre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="index.html" class="logo">
+      <span class="logo-text">DWCE</span>
+      <span class="logo-sub">Help Centre</span>
+    </a>
+  </div>
+</header>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<nav class="sidebar" id="sidebar">
+  <div class="nav-label">Phase 1 — Workers</div>
+  <a href="getting-started.html" class="nav-link">Getting Started</a>
+  <a href="login.html"           class="nav-link">Login &amp; Password</a>
+  <a href="clocking.html"        class="nav-link">Clocking In &amp; Out</a>
+  <a href="messages.html"        class="nav-link">Messages</a>
+  <a href="timesheets.html"      class="nav-link">Timesheets</a>
+  <a href="plant-checks.html"    class="nav-link">Plant Checks</a>
+  <a href="deliveries.html"      class="nav-link">Deliveries</a>
+  <a href="dashboard.html"       class="nav-link">Dashboard</a>
+  <div class="nav-label">Workshop</div>
+  <a href="workshop.html"        class="nav-link">Workshop</a>
+  <div class="nav-label">Updates</div>
+  <a href="whats-new.html"       class="nav-link">What's New</a>
+  <div class="nav-label">Legal</div>
+  <a href="terms.html"           class="nav-link">Terms &amp; Conditions</a>
+</nav>
+
+<main class="content">
+  <div class="content-inner">
+
+    <div class="breadcrumb"><a href="index.html">Home</a><span>What's New</span></div>
+    <h1>What's New</h1>
+    <p class="page-intro">
+      A running summary of recent updates and improvements to the DWCE Time Tracker app,
+      newest first.
+    </p>
+
+    <!-- ── 15 JULY 2026 ──────────────────────────────────────────── -->
+    <h2>15 July 2026</h2>
+    <ul>
+      <li><strong>Create Project (new)</strong> — Office and admin staff can now create a new
+        project directly in the app for the rare occasions a job needs to be opened before the
+        Access-managed project list can be updated (e.g. weekends, shutdowns). The screen walks
+        you through picking the right client, contract, and location — with GPS and a tap-to-pick
+        map, and automatic County/Town lookup — then shows a full preview before the project is
+        created.</li>
+      <li>Fixed an issue where creating a Work Order from a reported prestart fault could fail
+        to save.</li>
+    </ul>
+
+    <hr class="section-divider">
+
+    <!-- ── 13–14 JULY 2026 ──────────────────────────────────────────── -->
+    <h2>13–14 July 2026</h2>
+    <ul>
+      <li><strong>Large Plant Hub redesigned</strong> — plant details, service history, alerts,
+        and open jobs are now all visible on one scrollable screen instead of being split across
+        tabs. Tap the Plant Due Soon / Plant with Alerts tiles to filter the plant list.</li>
+      <li>Fixed the "Last used by" information on the Large Plant Hub to correctly show the
+        driver/operator, rather than a mechanic's workshop time.</li>
+      <li>Fixed the current clock reading occasionally not appearing on the Large Plant Hub.</li>
+      <li>Fixed a crash that could occur when leaving the Dashboard while clocking history was
+        still loading.</li>
+      <li>Fixed mechanic names failing to load on the Service Register plant detail screen.</li>
+    </ul>
+
+    <hr class="section-divider">
+
+    <!-- ── 30 JUNE – 2 JULY 2026 ──────────────────────────────────────────── -->
+    <h2>30 June – 2 July 2026</h2>
+    <ul>
+      <li>Added a live clock display above the adjustable time in Quick Clock In.</li>
+      <li>Improved the "My Clocking History" dashboard card with break times and weekly
+        totals.</li>
+      <li>Fixed timesheets briefly showing absence-only days in approval screens where they
+        shouldn't appear.</li>
+      <li>Fixed clock-in/out times occasionally showing 1 hour earlier than they should.</li>
+    </ul>
+
+    <div class="info">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Can't find something you're looking for, or think something's not working right? Contact your supervisor or site manager for assistance.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  &copy; 2025 DWCE. All rights reserved.
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>
