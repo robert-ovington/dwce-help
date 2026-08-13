@@ -63,6 +63,12 @@
             <li><a href="#submission-popup">g. Reviewing Before Saving</a></li>
           </ul>
         </li>
+        <li><a href="#other-users">Entering a Time Period for Someone Else</a>
+          <ul>
+            <li><a href="#other-user">Other User</a></li>
+            <li><a href="#multiple-user">Multiple User</a></li>
+          </ul>
+        </li>
         <li><a href="#reset-to-today">Returning to Today's Date</a></li>
         <li><a href="#my-timesheet">My Timesheet — Viewing, Editing &amp; Deleting</a></li>
         <li><a href="#my-hours">My Hours</a></li>
@@ -342,6 +348,48 @@
       <span class="callout-icon">⚠️</span>
       <div class="callout-body">
         <p>Always review the summary carefully. Once saved, a time period can still be edited, but only while its status is still "Submitted". Once a supervisor or admin approves it, further corrections must be made by them.</p>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════════
+         ENTERING FOR SOMEONE ELSE
+    ═════════════════════════════════════════════════════════════════ -->
+    <hr class="section-divider">
+    <h2 id="other-users">Entering a Time Period for Someone Else</h2>
+
+    <p>
+      If your role allows it (typically supervisors and office/admin staff), two extra checkboxes
+      appear at the top of the time period form so you can enter time on behalf of other people
+      instead of yourself.
+    </p>
+
+    <h3 id="other-user">Other User</h3>
+    <p>
+      Tick <strong>Other User</strong> to record a time period for a single employee. Once ticked,
+      a dropdown appears to select the employee. The <strong>Times &amp; Breaks</strong>,
+      <strong>Find Last Job</strong>, <strong>Saved Fleet</strong>, <strong>Allowances</strong>,
+      and time period summary sections all then relate to that employee, not to you. Untick the
+      box to revert everything back to your own data.
+    </p>
+
+    <h3 id="multiple-user">Multiple User</h3>
+    <p>
+      Tick <strong>Multiple User</strong> instead of Other User to submit the <strong>same</strong>
+      time period to several employees from one employer at once — useful when a whole crew worked
+      the same hours on the same job.
+    </p>
+    <ol class="steps">
+      <li>Tick <strong>Multiple User</strong>. Selecting an <strong>Employer</strong> is required before you can add employees.</li>
+      <li>Use <span class="btn-label">Add Employee</span> to build up a list of employees from that employer. Each added employee appears as a chip — tap the <strong>×</strong> on a chip to remove them from the list.</li>
+      <li>Only the <strong>Date, Time &amp; Breaks</strong> and <strong>Project</strong> sections are shown — there's no per-employee summary, Fleet, Allowances, Materials or Comments in this mode, since the same entry is applied to everyone in the list.</li>
+      <li>If you use <span class="btn-label">Find Last Job</span> with more than one employee added, a popup first asks which employee's job history to search.</li>
+      <li>Tap <span class="btn-label">Upload Time Period</span> to review the preview before it's created for every employee in the list.</li>
+    </ol>
+
+    <div class="warning">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>If any selected employee already has a time period that overlaps the one you're entering, the preview shows a warning and <strong>blocks submission entirely</strong> — for everyone in the list, not just the employee with the conflict. Cancel, then either adjust the time or remove that employee from the list before trying again.</p>
       </div>
     </div>
 

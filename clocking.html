@@ -57,6 +57,8 @@
         <li><a href="#breaks">Recording a Break</a></li>
         <li><a href="#project-selection">Selecting a Project</a></li>
         <li><a href="#adjusting-time">Adjusting the Clock Time</a></li>
+        <li><a href="#day-selection">Selecting a Different Day</a></li>
+        <li><a href="#crossing-midnight">Clocking Out on a Different Day</a></li>
         <li><a href="#vehicle-selection">Vehicle Selection</a></li>
         <li><a href="#clock-history">My Clockings</a></li>
         <li><a href="#location-required">Location Permission Required</a></li>
@@ -143,13 +145,53 @@
     <p>
       By default the clocking screen uses the current time. If you need to record a slightly
       earlier or later time (for example, if you were unable to clock in immediately on arrival),
-      you can adjust the time in <strong>15-minute steps</strong> using the time selector on the screen.
+      you can adjust the time in <strong>15-minute steps</strong> using the
+      <span class="btn-label">−</span> / <span class="btn-label">+</span> buttons on the screen.
+    </p>
+    <p>
+      For a bigger adjustment, tap the time itself to open a quick-set popup where you can enter
+      the time directly, rather than stepping through it 15 minutes at a time.
     </p>
 
     <div class="warning">
       <span class="callout-icon">⚠️</span>
       <div class="callout-body">
         <p>The actual time you tapped the button is also saved alongside the manually adjusted time. Only adjust the time if there is a genuine reason — do not use it to alter your records.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- ── DAY SELECTION ─────────────────────────────────────────────── -->
+    <h2 id="day-selection">Selecting a Different Day</h2>
+
+    <p>
+      The clock-in pop-down defaults to today, but includes a day selector for the
+      <strong>current week</strong> so you can clock in or out against an earlier day this week if
+      needed — for example, to correct a day you forgot to clock in on. It works the same way as
+      the day selector on the Timesheets screen.
+    </p>
+
+    <hr class="section-divider">
+
+    <!-- ── CROSSING MIDNIGHT ─────────────────────────────────────────── -->
+    <h2 id="crossing-midnight">Clocking Out on a Different Day</h2>
+
+    <p>
+      If you clock out on a different calendar day to when you clocked in (for example, clocking
+      in at 17:45 and clocking out at 01:30 the next morning on a night shift), the app detects
+      this automatically.
+    </p>
+
+    <ol class="steps">
+      <li>You'll see a warning that your clock-in and clock-out are on two different days, along with your total hours worked.</li>
+      <li>Once you confirm, the app automatically splits the session into a clean clock-out at midnight for the first day and a matching clock-in at midnight for the second day, so each day's record stays accurate.</li>
+    </ol>
+
+    <div class="tip">
+      <span class="callout-icon">✅</span>
+      <div class="callout-body">
+        <p>You don't need to do anything differently for a night shift — just clock in and out as normal. The app handles the midnight split for you.</p>
       </div>
     </div>
 
