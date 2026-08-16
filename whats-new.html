@@ -31,6 +31,7 @@
   <a href="timesheets.html"      class="nav-link">Timesheets</a>
   <a href="plant-checks.html"    class="nav-link">Plant Checks</a>
   <a href="deliveries.html"      class="nav-link">Deliveries</a>
+  <a href="offline.html"         class="nav-link">Working Offline</a>
   <a href="dashboard.html"       class="nav-link">Dashboard</a>
   <div class="nav-label">Workshop</div>
   <a href="workshop.html"        class="nav-link">Workshop</a>
@@ -51,6 +52,35 @@
       A running summary of recent updates and improvements to the DWCE Time Tracker app,
       newest first.
     </p>
+
+    <!-- ── 16 AUGUST 2026 ──────────────────────────────────────────── -->
+    <h2>16 August 2026</h2>
+    <ul>
+      <li><strong>Close App button</strong> — the Login screen (Android only) now has a red
+        <strong>Close App</strong> button in the top-right corner that fully closes the app,
+        including stopping any background beacon scanning, rather than just minimising it.</li>
+      <li><strong>My Clockings</strong> on the Main Menu now correctly requires the Clock In
+        permission, the same as the Clock In button itself.</li>
+      <li>The <strong>Create User</strong> screen now includes the same "Offline Access" options
+        (Offline Clock In/Out, Offline Timesheets, Offline Plant Checks, Offline Deliveries) as
+        Edit User, so they can be set correctly when a new account is created rather than only
+        afterwards.</li>
+    </ul>
+
+    <hr class="section-divider">
+
+    <!-- ── 16 AUGUST 2026 — BEHIND THE SCENES ────────────────────────── -->
+    <h2>16 August 2026 — Behind the Scenes</h2>
+    <ul>
+      <li>Updated several of the app's underlying building blocks (file picker, secure credential
+        storage, and device/permission handling) to their latest versions to keep the app current
+        and secure. No visible change to how the app works.</li>
+      <li>Updated the Android build tools the app compiles with (Gradle, Android Gradle Plugin,
+        Kotlin, and the Android SDK version) to keep pace with Google's requirements for future
+        Play Store updates. No visible change to how the app works.</li>
+    </ul>
+
+    <hr class="section-divider">
 
     <!-- ── 13 AUGUST 2026 ──────────────────────────────────────────── -->
     <h2>13 August 2026</h2>
