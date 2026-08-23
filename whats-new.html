@@ -53,6 +53,90 @@
       newest first.
     </p>
 
+    <!-- ── 23 AUGUST 2026 ──────────────────────────────────────────── -->
+    <h2>23 August 2026</h2>
+    <ul>
+      <li><strong>Offline PIN unlock (new)</strong> — set a 6-digit PIN and "Sign Out" becomes
+        <strong>Lock</strong> instead of a full sign-out, so you can get straight back into the
+        app with no signal by entering your PIN rather than needing a connection to log in
+        again. You'll be prompted to set one up the first time you log in after this update, or
+        set/change it any time from your account menu ("Set/Change Offline PIN"). Getting the
+        PIN wrong 5 times locks it for 30 seconds. "Sign out completely" is still there on the
+        PIN screen for when that's genuinely what you want.</li>
+      <li>Fixed the app getting stuck on an endless spinner when reopened with no signal (e.g.
+        Aeroplane Mode) with a previous session still on the device — it now restores straight
+        into the app instead.</li>
+      <li>The <strong>Close App</strong> button (Login screen, Android) now properly closes the
+        app every time — it could previously still show up in your recent-apps list looking
+        like it hadn't fully closed.</li>
+      <li><strong>Timesheet Completion</strong> (Dashboard, supervisors/admins) now also flags a
+        day where a clock-in/out doesn't quite add up, and lists anyone who hasn't clocked in on
+        a weekday that's already finished, so it can be caught sooner rather than at payroll.</li>
+      <li><strong>Working Offline</strong> — if something fails to sync, you'll now see a clear
+        red notice on-screen as soon as it happens, even once you're back online, instead of it
+        sitting invisibly until someone happens to open Offline Status.</li>
+    </ul>
+
+    <hr class="section-divider">
+
+    <!-- ── 23 AUGUST 2026 — BEHIND THE SCENES ────────────────────────── -->
+    <h2>23 August 2026 — Behind the Scenes</h2>
+    <ul>
+      <li>Fixed a Daylight Saving-related bug where editing a timesheet entry could log a false
+        "changed" entry in its history for a time that hadn't actually changed.</li>
+      <li>Continued work on making sure nothing gets duplicated if an offline save has to retry
+        after a poor signal. No visible change to how the app works.</li>
+    </ul>
+
+    <hr class="section-divider">
+
+    <!-- ── 22 AUGUST 2026 ──────────────────────────────────────────── -->
+    <h2>22 August 2026</h2>
+    <ul>
+      <li><strong>Beacon scanning is now manual</strong> — for privacy, the app no longer scans
+        for Bluetooth plant beacons automatically in the background. A <strong>Scan for
+        Beacons</strong> button on the Asset Check screen (and Beacon Trial) starts a scan
+        on demand instead.</li>
+      <li><strong>Quick Clock In</strong> — clock times and break start/end now always snap to
+        the nearest 15 minutes, matching the time picker, so daily and weekly totals stay
+        accurate.</li>
+      <li>Fixed <strong>My Clockings</strong> missing from the Main Menu on the Web version
+        (it was already there on mobile).</li>
+      <li>You can now delete your own Float Day, Sick Day, Appointment and Extra Hours entries
+        from the current week in <strong>Time Off</strong> — previously only an admin could.</li>
+      <li>Renamed <strong>My Clockings</strong> to <strong>Clocking History</strong> on the Main
+        Menu, with My Clockings and Time Off now grouped underneath it.</li>
+    </ul>
+
+    <hr class="section-divider">
+
+    <!-- ── 21 AUGUST 2026 ──────────────────────────────────────────── -->
+    <h2>21 August 2026</h2>
+    <ul>
+      <li><strong>Time Off (new)</strong> — staff with "Time Off Entitlement" enabled can now
+        record time off directly from Quick Clock In. Tap <strong>+ Time Off</strong> for a
+        Float Day or Sick Day — pick a From/To date range and every weekday (Monday to Friday)
+        in that range is recorded as a separate day — or an Appointment, where you pick the date
+        and set how long you were out using the +/- buttons in 15-minute steps. Tap
+        <strong>+ Extra Hours</strong> to log time worked back against an appointment the same
+        way.</li>
+      <li>Appointment time and Extra Hours worked back are tracked as a running
+        <strong>Time Off Balance</strong>, shown on the Dashboard whenever it isn't zero.</li>
+      <li><strong>Weekly Summary</strong> and <strong>Employee Summary</strong> now show "Float"
+        or "Sick" instead of hours worked on days recorded as a Float or Sick Day, and highlight
+        Appointment days in yellow so it's clear why the total is lower than usual.</li>
+      <li>Fixed the Previous/Next arrows above the employee name on
+        <strong>Admin Staff Attendance</strong> not working when the Employee filter was set to
+        a single person.</li>
+      <li>Admin Staff Attendance and Weekly Summary now only include active staff when
+        navigating between employees or displaying all staff.</li>
+      <li>Added a <strong>Display All</strong> button to Weekly Summary (matching the one
+        already on Admin Staff Attendance) to show every active office/admin staff member with
+        clock-in enabled, including anyone who hasn't clocked in yet this week.</li>
+    </ul>
+
+    <hr class="section-divider">
+
     <!-- ── 16 AUGUST 2026 ──────────────────────────────────────────── -->
     <h2>16 August 2026</h2>
     <ul>
