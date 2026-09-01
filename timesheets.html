@@ -502,18 +502,68 @@
     <h2 id="time-off">Time Off</h2>
 
     <p>
-      <strong>Time Off</strong> lets you request leave and see a calendar of your time off and
-      public holidays for the year.
+      <strong>Time Off</strong> covers four kinds of entry — <strong>Float Day</strong>,
+      <strong>Sick Day</strong>, <strong>Appointment</strong>, and <strong>Extra Hours</strong> — and
+      is only available if "Time Off Entitlement" has been enabled for your account.
     </p>
 
-    <ol class="steps">
-      <li>From the main menu, tap <strong>Timesheets → Time Off</strong>.</li>
-      <li>The screen shows your time off requests for the current year, plus a month calendar highlighting time-off days and public holidays.</li>
-      <li>Tap <span class="btn-label">Add Time Off Request</span> to open the request form.</li>
-      <li>Select the <strong>Start Date</strong> and <strong>End Date</strong>, choose the type of leave, and tap <span class="btn-label">Submit</span>.</li>
-    </ol>
+    <h3>Adding an entry</h3>
+    <p>You can add a Time Off entry from two places, and both lead to the same dialogs:</p>
+    <ul>
+      <li>From <strong>Quick Clock In</strong>, tap <span class="btn-label">+ Time Off</span> for a
+        Float Day, Sick Day or Appointment, or <span class="btn-label">+ Extra Hours</span> to log
+        time worked back.</li>
+      <li>From the main menu, tap <strong>Timesheets → Time Off</strong>, then tap the
+        <span class="btn-label">+</span> (Add Entry) icon in the top-right — this also offers Float
+        Day, Sick Day and Appointment (Extra Hours is only added from Quick Clock In).</li>
+    </ul>
 
-    <p>Each request shows a status badge — <strong>Pending</strong>, <strong>Approved</strong>, or <strong>Declined</strong> — as it moves through approval.</p>
+    <dl>
+      <dt><strong>Float Day / Sick Day</strong></dt>
+      <dd>Pick a <strong>From</strong> and <strong>To</strong> date. Every weekday (Monday to
+        Friday) in that range is recorded as a separate day. Confirming a <strong>Sick Day</strong>
+        also asks <strong>"Work Back? — Do you want to work back these hours at a later date?"</strong>
+        Answer <strong>Yes</strong> if you intend to make the hours up later (they'll count towards
+        your Net owed total below); answer <strong>No</strong> if not.</dd>
+
+      <dt><strong>Appointment</strong></dt>
+      <dd>Pick the date and set how long you were out using the +/- buttons in 15-minute steps.
+        Appointment time always counts towards your Net owed total.</dd>
+
+      <dt><strong>Extra Hours</strong></dt>
+      <dd>Pick the date and how long you worked, the same way as an Appointment, to log time worked
+        back against your balance. Only available from Quick Clock In.</dd>
+    </dl>
+
+    <div class="warning">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>You can only have one Float Day, Sick Day or Appointment entry per date — the app blocks
+          a second one for a day that already has one. Extra Hours has no such limit, since working
+          back time across more than one session in a day is normal.</p>
+      </div>
+    </div>
+
+    <h3>Viewing, editing and deleting entries</h3>
+    <p>
+      From the main menu, tap <strong>Timesheets → Time Off</strong> to see every entry you've
+      recorded this year, newest first, as a table showing Date, Type, Taken, Short and Extra for
+      each row.
+    </p>
+    <p>
+      You can edit or delete your own entries — including changing a Sick Day's Work Back answer,
+      which re-asks the question — but only while the entry's date falls in the <strong>current
+      week</strong>. Older entries show a lock icon and can no longer be changed by you; ask your
+      supervisor if one needs correcting.
+    </p>
+
+    <h3>Totals (this year)</h3>
+    <p>
+      A summary card above the entry list shows your running totals for the year: Float Day, Sick
+      Day (with the work-back portion shown separately), Appointment, and Extra Hours, plus a
+      <strong>Net owed</strong> figure — your Appointment and Sick Day work-back hours, minus any
+      Extra Hours you've already worked back. This same balance also appears on your
+      <a href="dashboard.html">Dashboard</a> whenever it isn't zero.</p>
 
   </div>
 </main>
